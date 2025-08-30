@@ -94,7 +94,7 @@ export default function Testimonials() {
 
             {/* 하이라이트 */}
             <div className="text-2xl font-bold text-gray-900 mb-6">
-              "{testimonials[activeIndex].highlight}"
+              &ldquo;{testimonials[activeIndex].highlight}&rdquo;
             </div>
 
             {/* 내용 */}
@@ -160,7 +160,7 @@ export default function Testimonials() {
                 ))}
               </div>
               <p className="text-gray-600 mb-4 line-clamp-3">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
               <div className="text-sm">
                 <div className="font-semibold text-gray-900">{testimonial.name}</div>

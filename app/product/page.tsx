@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/Button';
-import { Bluetooth, Battery, Cpu, Ruler, Package, Shield } from 'lucide-react';
+import { Bluetooth, Battery, Cpu, Package, Shield } from 'lucide-react';
 
 export default function ProductPage() {
   const specs = [

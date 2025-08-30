@@ -1,14 +1,12 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
 import { Button } from './Button';
 import { ArrowRight, Clock, Zap, Shield } from 'lucide-react';
 
 export default function Hero() {
   const [backers, setBackers] = useState(237);
-  const [superEarlyBird, setSuperEarlyBird] = useState(12);
+  const [superEarlyBird] = useState(12);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

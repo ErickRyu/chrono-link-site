@@ -42,7 +42,7 @@ export default function AboutPage() {
                   </p>
                   <div className="bg-black text-white p-6 rounded-xl">
                     <p className="text-lg font-semibold">
-                      "모든 사람이 자신의 시간을 온전히 소유할 권리가 있습니다"
+                      &ldquo;모든 사람이 자신의 시간을 온전히 소유할 권리가 있습니다&rdquo;
                     </p>
                   </div>
                 </div>

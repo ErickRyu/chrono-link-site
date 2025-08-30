@@ -73,11 +73,11 @@ export default function BalmudaExperience() {
         {/* Experience quote */}
         <div className="mt-32 max-w-3xl mx-auto text-center">
           <p className="text-2xl font-extralight leading-loose text-gray-800">
-            "사용할 때마다 느끼는
+            &ldquo;사용할 때마다 느끼는
             <br />
             작은 만족감이
             <br />
-            일상을 바꿉니다"
+            일상을 바꿉니다&rdquo;
           </p>
           <p className="mt-8 text-sm font-light text-gray-500 tracking-wider uppercase">
             Beta Tester Review

@@ -40,7 +40,7 @@ export default function Problem() {
             <h3 className="text-xl font-semibold mb-3">촉각의 힘</h3>
             <p className="text-gray-600">
               손으로 다이얼을 돌리는 물리적 행위는 
-              뇌에 '집중 모드' 신호를 보내 작업 완료율을 높입니다.
+              뇌에 &lsquo;집중 모드&rsquo; 신호를 보내 작업 완료율을 높입니다.
             </p>
           </div>
 

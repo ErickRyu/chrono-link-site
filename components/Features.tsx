@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Bluetooth, Clock, Smartphone, Bell, Battery, Brain, Zap, Shield } from 'lucide-react';
+import { Bluetooth, Battery, Brain, Zap } from 'lucide-react';
 
 export default function Features() {
   const [activeFeature, setActiveFeature] = useState(0);

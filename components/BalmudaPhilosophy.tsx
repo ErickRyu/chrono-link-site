@@ -55,13 +55,13 @@ export default function BalmudaPhilosophy() {
 
           <div className="max-w-xl mx-auto">
             <p className="text-base font-light leading-loose text-gray-500 text-center italic">
-              "최고의 도구는 필요에서 태어나는 것이 아니라
+              &ldquo;최고의 도구는 필요에서 태어나는 것이 아니라
               <br />
               욕망에서 태어납니다.
               <br />
               우리가 진정으로 원하는 것은
               <br />
-              시간을 소유하는 것입니다."
+              시간을 소유하는 것입니다.&rdquo;
             </p>
           </div>
         </div>
