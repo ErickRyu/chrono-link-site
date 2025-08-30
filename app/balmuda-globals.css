@@ -1,0 +1,148 @@
+@import "tailwindcss";
+
+@theme {
+  /* Balmuda Color Palette */
+  --color-balmuda-white: #FAFAFA;
+  --color-balmuda-light: #F5F5F5;
+  --color-balmuda-gray: #888888;
+  --color-balmuda-dark: #333333;
+  --color-balmuda-black: #000000;
+  --color-balmuda-accent: #C9302C;
+  
+  /* Refined Grays */
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+  
+  /* Typography */
+  --font-family-display: 'Helvetica Neue', -apple-system, 'Apple SD Gothic Neo', sans-serif;
+  --font-family-sans: 'Helvetica Neue', -apple-system, 'Apple SD Gothic Neo', sans-serif;
+  
+  /* Spacing */
+  --spacing-section: 160px;
+  --spacing-element: 80px;
+  --spacing-component: 40px;
+  
+  /* Animation */
+  --duration-slow: 1200ms;
+  --duration-normal: 800ms;
+  --duration-fast: 400ms;
+  --easing-elegant: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Custom Animations */
+@keyframes fadeInSlow {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes subtleFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Utility Classes */
+.font-light {
+  font-weight: 200;
+}
+
+.font-regular {
+  font-weight: 300;
+}
+
+.font-medium {
+  font-weight: 400;
+}
+
+.font-bold {
+  font-weight: 500;
+}
+
+.animate-fade-in-slow {
+  animation: fadeInSlow 1.2s var(--easing-elegant) forwards;
+}
+
+.animate-reveal {
+  animation: revealFromBottom 1.5s var(--easing-elegant) forwards;
+}
+
+.animate-float {
+  animation: subtleFloat 4s ease-in-out infinite;
+}
+
+/* Balmuda Style Overrides */
+.balmuda-hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #FAFAFA 0%, #F5F5F5 100%);
+}
+
+.balmuda-section {
+  padding: var(--spacing-section) 0;
+}
+
+.balmuda-heading {
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.balmuda-text {
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-gray-600);
+}
+
+.balmuda-button {
+  padding: 18px 48px;
+  background: var(--color-balmuda-black);
+  color: var(--color-balmuda-white);
+  border: 1px solid var(--color-balmuda-black);
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  transition: all 0.8s var(--easing-elegant);
+}
+
+.balmuda-button:hover {
+  background: transparent;
+  color: var(--color-balmuda-black);
+}
+
+.balmuda-image {
+  filter: contrast(1.05) brightness(1.02);
+  transition: all 1.2s var(--easing-elegant);
+}
+
+.balmuda-image:hover {
+  transform: scale(1.02);
+}
