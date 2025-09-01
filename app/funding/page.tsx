@@ -94,13 +94,13 @@ export default function Funding() {
               <div className="text-sm font-light text-gray-700 line-through mb-8">₩69,000</div>
               <div className="space-y-3 text-sm font-light text-gray-800 mb-12">
                 <div>• ChronoLink 물리 타이머 1개</div>
-                <div>• PC 연동 앱 라이선스</div>
-                <div>• BLE 무선 연결</div>
-                <div>• &apos;ChronoLink Pioneer&apos; 베타 테스터 자격</div>
-                <div>• 신기능 개발 우선 투표권</div>
+                <div>• PC/Mac 연동 앱</div>
+                <div>• BLE 5.0 무선 연결</div>
+                <div>• 프리미엄 패키지 박스</div>
+                <div>• 평생 무료 업데이트</div>
               </div>
               <div className="text-xs font-light text-gray-700 mb-6">
-                한정: 50개 중 3개 남음
+                한정: 50개 중 {stats.super_early_bird_remaining}개 남음
               </div>
               <button 
                 onClick={() => handleSelectTier('슈퍼 얼리버드', '₩39,000')}
@@ -126,13 +126,10 @@ export default function Funding() {
               <div className="text-sm font-light text-gray-400 line-through mb-8">₩69,000</div>
               <div className="space-y-3 text-sm font-light text-gray-200 mb-12">
                 <div>• ChronoLink 물리 타이머 1개</div>
-                <div>• PC 연동 앱 라이선스</div>
-                <div>• BLE 무선 연결</div>
-                <div>• &apos;ChronoLink Pioneer&apos; 베타 테스터 자격</div>
-                <div>• 신기능 개발 우선 투표권</div>
-              </div>
-              <div className="text-xs font-light text-gray-300 mb-6">
-                예상 배송: 2025년 3월
+                <div>• PC/Mac 연동 앱</div>
+                <div>• BLE 5.0 무선 연결</div>
+                <div>• 스탠다드 패키지 박스</div>
+                <div>• 평생 무료 업데이트</div>
               </div>
               <button 
                 onClick={() => handleSelectTier('얼리버드', '₩49,000')}
@@ -144,18 +141,14 @@ export default function Funding() {
             {/* Standard */}
             <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500">
               <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">정가</div>
-              <div className="text-2xl font-extralight text-gray-900 mb-4">스킠다드</div>
+              <div className="text-2xl font-extralight text-gray-900 mb-4">스탠다드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-8">₩69,000</div>
               <div className="space-y-3 text-sm font-light text-gray-800 mb-12">
                 <div>• ChronoLink 물리 타이머 1개</div>
-                <div>• 스키다드 기프트 박스</div>
-                <div>• 디지털 매뉴얼</div>
-                <div>• 모바일 앱 연동</div>
-                <div>• 1년 보증</div>
-                <div>• 기본 지원</div>
-              </div>
-              <div className="text-xs font-light text-gray-700 mb-6">
-                예상 배송: 2025년 4월
+                <div>• PC/Mac 연동 앱</div>
+                <div>• BLE 5.0 무선 연결</div>
+                <div>• 베이직 패키지 박스</div>
+                <div>• 1년 무료 업데이트</div>
               </div>
               <button 
                 onClick={() => handleSelectTier('스탠다드', '₩69,000')}
