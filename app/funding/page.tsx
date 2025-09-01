@@ -13,14 +13,8 @@ export default function Funding() {
             </Link>
           </div>
           <div className="flex gap-12">
-            <Link href="/#philosophy" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-              Philosophy
-            </Link>
-            <Link href="/#design" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-              Design
-            </Link>
-            <Link href="/#experience" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-              Experience
+            <Link href="/" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+              About
             </Link>
             <Link href="/funding" className="text-sm font-light text-gray-900 border-b border-gray-900">
               Funding

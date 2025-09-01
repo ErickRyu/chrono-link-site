@@ -2,7 +2,7 @@ export default function BalmudaFooter() {
   return (
     <footer className="py-20 bg-white border-t border-gray-100">
       <div className="max-w-7xl mx-auto px-8">
-        <div className="grid md:grid-cols-4 gap-16">
+        <div className="grid md:grid-cols-3 gap-16">
           {/* Brand */}
           <div>
             <h3 className="text-sm font-light tracking-[0.2em] uppercase mb-6">
@@ -13,74 +13,40 @@ export default function BalmudaFooter() {
             </p>
           </div>
 
-          {/* Product */}
+          {/* Pages */}
           <div>
             <h3 className="text-sm font-light tracking-wider uppercase mb-6 text-gray-900">
-              Product
+              Pages
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Specifications
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Manual
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="text-sm font-light tracking-wider uppercase mb-6 text-gray-900">
-              Support
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Care Service
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Warranty
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="text-sm font-light tracking-wider uppercase mb-6 text-gray-900">
-              Company
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+                <a href="/" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
                   About
                 </a>
               </li>
               <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  Philosophy
+                <a href="/funding" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+                  Funding
                 </a>
               </li>
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h3 className="text-sm font-light tracking-wider uppercase mb-6 text-gray-900">
+              Contact
+            </h3>
+            <ul className="space-y-3">
               <li>
-                <a href="#" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-                  News
-                </a>
+                <span className="text-sm font-light text-gray-600">
+                  rkggmdii+chronolink@gmail.com
+                </span>
+              </li>
+              <li>
+                <span className="text-sm font-light text-gray-600">
+                  Seoul, South Korea
+                </span>
               </li>
             </ul>
           </div>
@@ -93,10 +59,10 @@ export default function BalmudaFooter() {
               © 2024 ChronoLink. All rights reserved.
             </p>
             <div className="flex gap-8">
-              <a href="#" className="text-xs font-light text-gray-500 hover:text-gray-900 transition-colors duration-500">
+              <a href="/privacy" className="text-xs font-light text-gray-500 hover:text-gray-900 transition-colors duration-500">
                 Privacy
               </a>
-              <a href="#" className="text-xs font-light text-gray-500 hover:text-gray-900 transition-colors duration-500">
+              <a href="/terms" className="text-xs font-light text-gray-500 hover:text-gray-900 transition-colors duration-500">
                 Terms
               </a>
             </div>

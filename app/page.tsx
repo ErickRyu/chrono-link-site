@@ -16,14 +16,8 @@ export default function Home() {
             ChronoLink
           </div>
           <div className="flex gap-12">
-            <a href="#philosophy" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-              Philosophy
-            </a>
-            <a href="#design" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-              Design
-            </a>
-            <a href="#experience" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
-              Experience
+            <a href="/" className="text-sm font-light text-gray-900 border-b border-gray-900">
+              About
             </a>
             <a href="/funding" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
               Funding

@@ -17,13 +17,8 @@ export default function Header() {
   }, []);
 
   const navItems = [
-    { href: '/', label: '홈' },
-    { href: '/funding', label: '펀딩' },
-    { href: '/product', label: '제품' },
-    { href: '/features', label: '기능' },
-    { href: '/about', label: '소개' },
-    { href: '/ecosystem', label: '연동' },
-    { href: '/pricing', label: '구매' },
+    { href: '/', label: 'About' },
+    { href: '/funding', label: 'Funding' },
   ];
 
   return (
@@ -72,10 +67,10 @@ export default function Header() {
             {/* CTA 버튼 */}
             <div className="hidden md:block">
               <Link
-                href="/pricing"
+                href="/funding"
                 className="bg-black text-white px-6 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors"
               >
-                지금 구매하기
+                Support
               </Link>
             </div>
 
@@ -104,11 +99,11 @@ export default function Header() {
                   </Link>
                 ))}
                 <Link
-                  href="/pricing"
+                  href="/funding"
                   className="bg-black text-white px-6 py-2.5 rounded-lg font-medium hover:bg-gray-800 transition-colors text-center"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  지금 구매하기
+                  Support
                 </Link>
               </div>
             </div>

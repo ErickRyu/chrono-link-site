@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-8">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* 브랜드 섹션 */}
-          <div className="md:col-span-1">
+          <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
                 <span className="text-gray-900 font-bold text-sm">C</span>
@@ -19,55 +19,18 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* 제품 */}
+          {/* 페이지 */}
           <div>
-            <h3 className="font-semibold mb-4">제품</h3>
+            <h3 className="font-semibold mb-4">Pages</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/product" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  ChronoLink 소개
+                <Link href="/" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  About
                 </Link>
               </li>
               <li>
-                <Link href="/features" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  주요 기능
-                </Link>
-              </li>
-              <li>
-                <Link href="/specs" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  기술 사양
-                </Link>
-              </li>
-              <li>
-                <Link href="/ecosystem" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  앱 연동
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* 지원 */}
-          <div>
-            <h3 className="font-semibold mb-4">지원</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/faq" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  자주 묻는 질문
-                </Link>
-              </li>
-              <li>
-                <Link href="/manual" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  사용 설명서
-                </Link>
-              </li>
-              <li>
-                <Link href="/warranty" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  보증 정책
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-400 hover:text-white transition-colors text-sm">
-                  문의하기
+                <Link href="/funding" className="text-gray-400 hover:text-white transition-colors text-sm">
+                  Funding
                 </Link>
               </li>
             </ul>
@@ -75,7 +38,7 @@ export default function Footer() {
 
           {/* 연락처 */}
           <div>
-            <h3 className="font-semibold mb-4">연락처</h3>
+            <h3 className="font-semibold mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 text-gray-400 mt-0.5" />
@@ -84,15 +47,9 @@ export default function Footer() {
                 </span>
               </li>
               <li className="flex items-start gap-2">
-                <Phone className="w-4 h-4 text-gray-400 mt-0.5" />
-                <span className="text-gray-400 text-sm">
-                  평일 10:00 - 18:00
-                </span>
-              </li>
-              <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-gray-400 mt-0.5" />
                 <span className="text-gray-400 text-sm">
-                  서울특별시
+                  Seoul, South Korea
                 </span>
               </li>
             </ul>
@@ -107,10 +64,10 @@ export default function Footer() {
             </p>
             <div className="flex gap-6">
               <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
-                개인정보처리방침
+                Privacy
               </Link>
               <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-sm">
-                이용약관
+                Terms
               </Link>
             </div>
           </div>
