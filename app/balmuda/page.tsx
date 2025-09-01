@@ -1,4 +1,5 @@
 import BalmudaHero from '@/components/BalmudaHero';
+import Story from '@/components/Story';
 import BalmudaPhilosophy from '@/components/BalmudaPhilosophy';
 import BalmudaDesign from '@/components/BalmudaDesign';
 import BalmudaExperience from '@/components/BalmudaExperience';
@@ -34,6 +35,7 @@ export default function BalmudaPage() {
       {/* Main Content */}
       <main>
         <BalmudaHero />
+        <Story />
         <div id="philosophy">
           <BalmudaPhilosophy />
         </div>

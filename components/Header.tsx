@@ -18,6 +18,7 @@ export default function Header() {
 
   const navItems = [
     { href: '/', label: '홈' },
+    { href: '/funding', label: '펀딩' },
     { href: '/product', label: '제품' },
     { href: '/features', label: '기능' },
     { href: '/about', label: '소개' },
