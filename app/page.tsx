@@ -33,12 +33,6 @@ export default function Home() {
         <div id="philosophy">
           <BalmudaPhilosophy />
         </div>
-        <div id="design">
-          <BalmudaDesign />
-        </div>
-        <div id="experience">
-          <BalmudaExperience />
-        </div>
         
         {/* Minimal Purchase Section */}
         <section className="py-40 bg-[#FAFAFA]">

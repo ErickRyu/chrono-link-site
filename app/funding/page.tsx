@@ -241,23 +241,6 @@ export default function Funding() {
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-40 bg-[#FAFAFA]">
-        <div className="max-w-4xl mx-auto px-8 text-center">
-          <h2 className="text-5xl md:text-6xl font-extralight text-gray-900 tracking-wide mb-8">
-            Join the Movement
-          </h2>
-          <p className="text-xl font-light text-gray-600 mb-16 max-w-2xl mx-auto">
-            집중, 생산성, 그리고 의도적인 삶에 대한 새로운 접근을 함께 정의해 나가요.
-          </p>
-          <button className="px-16 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
-            ChronoLink 후원하기
-          </button>
-          <div className="mt-8 text-sm font-light text-gray-500">
-            30일 환불 보장 • 보안 결제 • 무료 배송
-          </div>
-        </div>
-      </section>
 
       {/* Minimal Footer */}
       <footer className="py-16 bg-white border-t border-gray-100">
