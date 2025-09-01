@@ -20,9 +20,6 @@ export default function Funding() {
               Funding
             </Link>
           </div>
-          <button className="text-sm font-light tracking-wider uppercase px-6 py-2 border border-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-500">
-            Back
-          </button>
         </div>
       </nav>
 
@@ -279,11 +276,6 @@ export default function Funding() {
           <div className="flex justify-between items-center">
             <div className="text-sm font-light tracking-[0.2em] uppercase text-gray-500">
               ChronoLink © 2024
-            </div>
-            <div className="flex gap-8 text-sm font-light text-gray-500">
-              <Link href="/privacy" className="hover:text-gray-900 transition-colors duration-500">Privacy</Link>
-              <Link href="/terms" className="hover:text-gray-900 transition-colors duration-500">Terms</Link>
-              <Link href="/contact" className="hover:text-gray-900 transition-colors duration-500">Contact</Link>
             </div>
           </div>
         </div>

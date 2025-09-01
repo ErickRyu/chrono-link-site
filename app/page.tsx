@@ -23,9 +23,6 @@ export default function Home() {
               Funding
             </a>
           </div>
-          <button className="text-sm font-light tracking-wider uppercase px-6 py-2 border border-gray-900 hover:bg-gray-900 hover:text-white transition-all duration-500">
-            Order
-          </button>
         </div>
       </nav>
 

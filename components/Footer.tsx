@@ -62,14 +62,6 @@ export default function Footer() {
             <p className="text-gray-400 text-sm">
               © 2024 ChronoLink. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <Link href="/privacy" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Privacy
-              </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white transition-colors text-sm">
-                Terms
-              </Link>
-            </div>
           </div>
         </div>
 

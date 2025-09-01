@@ -58,14 +58,6 @@ export default function BalmudaFooter() {
             <p className="text-xs font-light text-gray-500 tracking-wider">
               © 2024 ChronoLink. All rights reserved.
             </p>
-            <div className="flex gap-8">
-              <a href="/privacy" className="text-xs font-light text-gray-500 hover:text-gray-900 transition-colors duration-500">
-                Privacy
-              </a>
-              <a href="/terms" className="text-xs font-light text-gray-500 hover:text-gray-900 transition-colors duration-500">
-                Terms
-              </a>
-            </div>
           </div>
         </div>
 
