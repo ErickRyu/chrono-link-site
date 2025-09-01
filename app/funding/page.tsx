@@ -92,13 +92,6 @@ export default function Funding() {
               <div className="text-2xl font-extralight text-gray-900 mb-4">슈퍼 얼리버드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-2">₩39,000</div>
               <div className="text-sm font-light text-gray-700 line-through mb-8">₩69,000</div>
-              <div className="space-y-3 text-sm font-light text-gray-800 mb-12">
-                <div>• ChronoLink 물리 타이머 1개</div>
-                <div>• PC/Mac 연동 앱</div>
-                <div>• BLE 5.0 무선 연결</div>
-                <div>• 프리미엄 패키지 박스</div>
-                <div>• 평생 무료 업데이트</div>
-              </div>
               <div className="text-xs font-light text-gray-700 mb-6">
                 한정: 50개 중 {stats.super_early_bird_remaining}개 남음
               </div>
@@ -124,13 +117,6 @@ export default function Funding() {
               <div className="text-2xl font-extralight mb-4">얼리버드</div>
               <div className="text-4xl font-extralight mb-2">₩49,000</div>
               <div className="text-sm font-light text-gray-400 line-through mb-8">₩69,000</div>
-              <div className="space-y-3 text-sm font-light text-gray-200 mb-12">
-                <div>• ChronoLink 물리 타이머 1개</div>
-                <div>• PC/Mac 연동 앱</div>
-                <div>• BLE 5.0 무선 연결</div>
-                <div>• 스탠다드 패키지 박스</div>
-                <div>• 평생 무료 업데이트</div>
-              </div>
               <button 
                 onClick={() => handleSelectTier('얼리버드', '₩49,000')}
                 className="w-full py-3 bg-white text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-100 transition-all duration-500">
@@ -143,13 +129,6 @@ export default function Funding() {
               <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">정가</div>
               <div className="text-2xl font-extralight text-gray-900 mb-4">스탠다드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-8">₩69,000</div>
-              <div className="space-y-3 text-sm font-light text-gray-800 mb-12">
-                <div>• ChronoLink 물리 타이머 1개</div>
-                <div>• PC/Mac 연동 앱</div>
-                <div>• BLE 5.0 무선 연결</div>
-                <div>• 베이직 패키지 박스</div>
-                <div>• 1년 무료 업데이트</div>
-              </div>
               <button 
                 onClick={() => handleSelectTier('스탠다드', '₩69,000')}
                 className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
