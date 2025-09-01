@@ -99,9 +99,9 @@ export default function Home() {
               <div className="text-sm font-light text-gray-500 tracking-wider uppercase">
                 Early Bird Special: ₩39,000
               </div>
-              <button className="mt-8 px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
+              <a href="/funding" className="mt-8 inline-block px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
                 Purchase
-              </button>
+              </a>
             </div>
           </div>
         </section>
