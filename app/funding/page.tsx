@@ -200,52 +200,41 @@ export default function Funding() {
               Journey Timeline
             </h2>
             <p className="text-lg font-light text-gray-600">
-              Our path from concept to your desk.
+              From discovery to creation, our decade-long journey toward mindful productivity.
             </p>
           </div>
 
           <div className="space-y-12">
             <div className="flex gap-8 items-start">
               <div className="w-20 text-right">
-                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">Dec 2024</div>
+                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">2014</div>
               </div>
               <div className="w-px h-16 bg-gray-200 mt-2"></div>
               <div className="flex-1">
-                <h3 className="text-xl font-light text-gray-900 mb-2">Campaign Launch</h3>
-                <p className="text-sm font-light text-gray-600">Community funding begins with early bird pricing.</p>
+                <h3 className="text-xl font-light text-gray-900 mb-2">Discovery</h3>
+                <p className="text-sm font-light text-gray-600">Pomodoro 기법을 알게 되고 생산성 향상을 위한 다양한 방법들을 시도.</p>
               </div>
             </div>
 
             <div className="flex gap-8 items-start">
               <div className="w-20 text-right">
-                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">Jan 2025</div>
+                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">2018</div>
               </div>
               <div className="w-px h-16 bg-gray-200 mt-2"></div>
               <div className="flex-1">
-                <h3 className="text-xl font-light text-gray-900 mb-2">Production Setup</h3>
-                <p className="text-sm font-light text-gray-600">Finalizing manufacturing partnerships and quality protocols.</p>
+                <h3 className="text-xl font-light text-gray-900 mb-2">Creation</h3>
+                <p className="text-sm font-light text-gray-600">기존 앱들의 한계를 느끼고 직접 Powerdoro 앱을 개발하여 개인적 니즈 해결.</p>
               </div>
             </div>
 
             <div className="flex gap-8 items-start">
               <div className="w-20 text-right">
-                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">Feb 2025</div>
-              </div>
-              <div className="w-px h-16 bg-gray-200 mt-2"></div>
-              <div className="flex-1">
-                <h3 className="text-xl font-light text-gray-900 mb-2">First Delivery</h3>
-                <p className="text-sm font-light text-gray-600">Premium tier backers receive their ChronoLink devices.</p>
-              </div>
-            </div>
-
-            <div className="flex gap-8 items-start">
-              <div className="w-20 text-right">
-                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">Mar 2025</div>
+                <div className="text-sm font-light text-gray-500 tracking-wider uppercase">Aug 2025</div>
               </div>
               <div className="w-px h-16 bg-gray-900 mt-2"></div>
               <div className="flex-1">
-                <h3 className="text-xl font-light text-gray-900 mb-2">Full Launch</h3>
-                <p className="text-sm font-light text-gray-600">All backers receive their devices. Public sales begin.</p>
+                <h3 className="text-xl font-light text-gray-900 mb-2">Evolution</h3>
+                <p className="text-sm font-light text-gray-600">물리적 타이머의 필요성을 깨닫고 ChronoLink 하드웨어 개발을 위한 펀딩 시작.</p>
               </div>
             </div>
           </div>
