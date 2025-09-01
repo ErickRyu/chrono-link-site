@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function BalmudaFooter() {
   return (
     <footer className="py-20 bg-white border-t border-gray-100">
@@ -20,14 +22,14 @@ export default function BalmudaFooter() {
             </h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+                <Link href="/" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/funding" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+                <Link href="/funding" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
                   Funding
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

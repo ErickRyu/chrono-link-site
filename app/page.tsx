@@ -1,9 +1,8 @@
 import BalmudaHero from '@/components/BalmudaHero';
 import Story from '@/components/Story';
 import BalmudaPhilosophy from '@/components/BalmudaPhilosophy';
-import BalmudaDesign from '@/components/BalmudaDesign';
-import BalmudaExperience from '@/components/BalmudaExperience';
 import BalmudaFooter from '@/components/BalmudaFooter';
+import Link from 'next/link';
 import './balmuda-globals.css';
 
 export default function Home() {
@@ -16,12 +15,12 @@ export default function Home() {
             ChronoLink
           </div>
           <div className="flex gap-12">
-            <a href="/" className="text-sm font-light text-gray-900 border-b border-gray-900">
+            <Link href="/" className="text-sm font-light text-gray-900 border-b border-gray-900">
               About
-            </a>
-            <a href="/funding" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+            </Link>
+            <Link href="/funding" className="text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
               Funding
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -99,9 +98,9 @@ export default function Home() {
               <div className="text-sm font-light text-gray-700 tracking-wider uppercase">
                 Early Bird Special: ₩39,000
               </div>
-              <a href="/funding" className="mt-8 inline-block px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
+              <Link href="/funding" className="mt-8 inline-block px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
                 Purchase
-              </a>
+              </Link>
             </div>
           </div>
         </section>

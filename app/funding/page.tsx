@@ -1,7 +1,21 @@
+'use client';
+
 import '../balmuda-globals.css';
 import Link from 'next/link';
+import { useFundingStats } from '@/hooks/useFundingStats';
+import { useState } from 'react';
+import FundingModal from '@/components/FundingModal';
 
 export default function Funding() {
+  const stats = useFundingStats();
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState({ name: '', price: '' });
+
+  const handleSelectTier = (packageName: string, packagePrice: string) => {
+    setSelectedPackage({ name: packageName, price: packagePrice });
+    setModalOpen(true);
+  };
+
   return (
     <div className="font-['Helvetica_Neue'] bg-[#FAFAFA] min-h-screen">
       {/* Minimal Navigation */}
@@ -40,17 +54,17 @@ export default function Funding() {
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center mb-16">
             <div className="text-5xl font-extralight text-gray-900 mb-4">
-              ₩24,680,000
+              ₩{stats.total_raised?.toLocaleString() || '24,680,000'}
             </div>
             <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-8">
               목표 ₩50,000,000 중 달성
             </div>
             <div className="w-full bg-gray-200 h-1 rounded-full mb-4">
-              <div className="bg-gray-900 h-1 rounded-full" style={{ width: '49.4%' }}></div>
+              <div className="bg-gray-900 h-1 rounded-full" style={{ width: `${stats.funding_percentage}%` }}></div>
             </div>
             <div className="flex justify-between text-sm font-light text-gray-800">
-              <span>237명 후원</span>
-              <span>49% 달성</span>
+              <span>{stats.total_backers}명 후원</span>
+              <span>{stats.funding_percentage}% 달성</span>
               <span>18일 남음</span>
             </div>
           </div>
@@ -91,7 +105,9 @@ export default function Funding() {
               <div className="text-xs font-light text-gray-700 mb-6">
                 한정: 50개 중 3개 남음
               </div>
-              <button className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
+              <button 
+                onClick={() => handleSelectTier('슈퍼 얼리버드', '₩39,000')}
+                className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
                 선택하기
               </button>
             </div>
@@ -121,7 +137,9 @@ export default function Funding() {
               <div className="text-xs font-light text-gray-300 mb-6">
                 예상 배송: 2025년 3월
               </div>
-              <button className="w-full py-3 bg-white text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-100 transition-all duration-500">
+              <button 
+                onClick={() => handleSelectTier('얼리버드', '₩49,000')}
+                className="w-full py-3 bg-white text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-100 transition-all duration-500">
                 선택하기
               </button>
             </div>
@@ -142,7 +160,9 @@ export default function Funding() {
               <div className="text-xs font-light text-gray-700 mb-6">
                 예상 배송: 2025년 4월
               </div>
-              <button className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
+              <button 
+                onClick={() => handleSelectTier('스탠다드', '₩69,000')}
+                className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
                 선택하기
               </button>
             </div>
@@ -163,6 +183,14 @@ export default function Funding() {
           </div>
         </div>
       </footer>
+
+      {/* Funding Modal */}
+      <FundingModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        packageType={selectedPackage.name}
+        price={selectedPackage.price}
+      />
     </div>
   );
 }
