@@ -5,7 +5,7 @@ import { Button } from './Button';
 import { ArrowRight, Clock, Zap, Shield } from 'lucide-react';
 
 export default function Hero() {
-  const [backers, setBackers] = useState(237);
+  const [backers, setBackers] = useState(0);
   const [superEarlyBird] = useState(12);
   const [isVisible, setIsVisible] = useState(false);
 

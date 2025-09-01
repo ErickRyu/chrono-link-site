@@ -5,10 +5,10 @@ import { supabase, FundingStats } from '@/lib/supabase';
 
 export function useFundingStats() {
   const [stats, setStats] = useState<FundingStats>({
-    total_backers: 237,
-    super_early_bird_remaining: 3,
-    early_bird_remaining: 150,
-    funding_percentage: 49.4
+    total_backers: 0,
+    super_early_bird_remaining: 50,
+    early_bird_remaining: 200,
+    funding_percentage: 0
   });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);

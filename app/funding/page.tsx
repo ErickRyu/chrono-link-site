@@ -54,17 +54,14 @@ export default function Funding() {
         <div className="max-w-4xl mx-auto px-8">
           <div className="text-center mb-16">
             <div className="text-5xl font-extralight text-gray-900 mb-4">
-              ₩{stats.total_raised?.toLocaleString() || '24,680,000'}
-            </div>
-            <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-8">
-              목표 ₩50,000,000 중 달성
+              {stats.total_backers}명 후원
             </div>
             <div className="w-full bg-gray-200 h-1 rounded-full mb-4">
-              <div className="bg-gray-900 h-1 rounded-full" style={{ width: `${stats.funding_percentage}%` }}></div>
+              <div className="bg-gray-900 h-1 rounded-full" style={{ width: `${Math.min((stats.total_backers / 500) * 100, 100)}%` }}></div>
             </div>
             <div className="flex justify-between text-sm font-light text-gray-800">
-              <span>{stats.total_backers}명 후원</span>
-              <span>{stats.funding_percentage}% 달성</span>
+              <span>목표: 500명</span>
+              <span>{Math.round((stats.total_backers / 500) * 100)}% 달성</span>
               <span>18일 남음</span>
             </div>
           </div>
