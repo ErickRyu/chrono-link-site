@@ -80,9 +80,9 @@ export default function Funding() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto items-stretch">
             {/* Super Early Bird */}
-            <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500 relative">
+            <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500 relative flex flex-col">
               <div className="absolute top-4 right-4">
                 <span className="bg-gray-900 text-white px-3 py-1 text-xs font-light tracking-wider uppercase">
                   -43%
@@ -92,8 +92,8 @@ export default function Funding() {
               <div className="text-2xl font-extralight text-gray-900 mb-4">슈퍼 얼리버드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-2">₩39,000</div>
               <div className="text-sm font-light text-gray-700 line-through mb-8">₩69,000</div>
-              <div className="text-xs font-light text-gray-700 mb-6">
-                한정: 50개 중 {stats.super_early_bird_remaining}개 남음
+              <div className="text-xs font-light text-gray-700 mb-6 flex-grow flex items-end justify-center">
+                <span>한정: 50개 중 {stats.super_early_bird_remaining}개 남음</span>
               </div>
               <button 
                 onClick={() => handleSelectTier('슈퍼 얼리버드', '₩39,000')}
@@ -103,7 +103,7 @@ export default function Funding() {
             </div>
 
             {/* Early Bird */}
-            <div className="bg-gray-900 text-white p-12 text-center group relative">
+            <div className="bg-gray-900 text-white p-12 text-center group relative flex flex-col">
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <span className="bg-gray-900 text-white px-4 py-1 text-xs font-light tracking-wider uppercase">
                   가장 인기
@@ -117,6 +117,9 @@ export default function Funding() {
               <div className="text-2xl font-extralight mb-4">얼리버드</div>
               <div className="text-4xl font-extralight mb-2">₩49,000</div>
               <div className="text-sm font-light text-gray-400 line-through mb-8">₩69,000</div>
+              <div className="flex-grow flex items-end justify-center mb-6">
+                <span className="text-xs font-light text-transparent">.</span>
+              </div>
               <button 
                 onClick={() => handleSelectTier('얼리버드', '₩49,000')}
                 className="w-full py-3 bg-white text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-100 transition-all duration-500">
@@ -125,10 +128,13 @@ export default function Funding() {
             </div>
 
             {/* Standard */}
-            <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500">
+            <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500 flex flex-col">
               <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">정가</div>
               <div className="text-2xl font-extralight text-gray-900 mb-4">스탠다드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-8">₩69,000</div>
+              <div className="flex-grow flex items-end justify-center mb-6">
+                <span className="text-xs font-light text-transparent">.</span>
+              </div>
               <button 
                 onClick={() => handleSelectTier('스탠다드', '₩69,000')}
                 className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
