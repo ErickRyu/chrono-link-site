@@ -97,19 +97,6 @@ export default function Story() {
             </p>
           </div>
 
-          <div className="w-16 h-[1px] bg-gray-300 mx-auto" />
-
-          <div className="max-w-xl mx-auto">
-            <p className="text-base font-light leading-loose text-gray-500 text-center italic">
-              &ldquo;최고의 도구는 필요에서 태어나는 것이 아니라
-              <br />
-              간절함에서 태어납니다.
-              <br />
-              ChronoLink는 제 간절함이
-              <br />
-              형태를 갖춘 것입니다.&rdquo;
-            </p>
-          </div>
         </div>
 
         {/* Closing statement - minimal */}

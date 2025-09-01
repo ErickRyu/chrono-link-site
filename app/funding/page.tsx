@@ -29,7 +29,7 @@ export default function Funding() {
           <h1 className="text-6xl md:text-8xl font-extralight text-gray-900 tracking-wide mb-8">
             Fund the Future
           </h1>
-          <p className="text-xl font-light text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl font-light text-gray-800 max-w-2xl mx-auto leading-relaxed">
             깊이 있는 디자인과 의미 있는 기술로 집중력과 생산성을 재정의하는 ChronoLink의 여정을 함께해 주세요.
           </p>
         </div>
@@ -42,13 +42,13 @@ export default function Funding() {
             <div className="text-5xl font-extralight text-gray-900 mb-4">
               ₩24,680,000
             </div>
-            <div className="text-sm font-light text-gray-500 tracking-wider uppercase mb-8">
+            <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-8">
               목표 ₩50,000,000 중 달성
             </div>
             <div className="w-full bg-gray-200 h-1 rounded-full mb-4">
               <div className="bg-gray-900 h-1 rounded-full" style={{ width: '49.4%' }}></div>
             </div>
-            <div className="flex justify-between text-sm font-light text-gray-600">
+            <div className="flex justify-between text-sm font-light text-gray-800">
               <span>237명 후원</span>
               <span>49% 달성</span>
               <span>18일 남음</span>
@@ -64,7 +64,7 @@ export default function Funding() {
             <h2 className="text-4xl md:text-5xl font-extralight text-gray-900 tracking-wide mb-6">
               Choose Your Support
             </h2>
-            <p className="text-lg font-light text-gray-600">
+            <p className="text-lg font-light text-gray-800">
               모든 후원이 ChronoLink 출시에 한 걸음 더 가까이 가져다 줍니다.
             </p>
           </div>
@@ -77,18 +77,18 @@ export default function Funding() {
                   -43%
                 </span>
               </div>
-              <div className="text-sm font-light text-gray-500 tracking-wider uppercase mb-2">한정 시간</div>
+              <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">한정 시간</div>
               <div className="text-2xl font-extralight text-gray-900 mb-4">슈퍼 얼리버드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-2">₩39,000</div>
-              <div className="text-sm font-light text-gray-500 line-through mb-8">₩69,000</div>
-              <div className="space-y-3 text-sm font-light text-gray-600 mb-12">
+              <div className="text-sm font-light text-gray-700 line-through mb-8">₩69,000</div>
+              <div className="space-y-3 text-sm font-light text-gray-800 mb-12">
                 <div>• ChronoLink 물리 타이머 1개</div>
                 <div>• PC 연동 앱 라이선스</div>
                 <div>• BLE 무선 연결</div>
                 <div>• &apos;ChronoLink Pioneer&apos; 베타 테스터 자격</div>
                 <div>• 신기능 개발 우선 투표권</div>
               </div>
-              <div className="text-xs font-light text-gray-500 mb-6">
+              <div className="text-xs font-light text-gray-700 mb-6">
                 한정: 50개 중 3개 남음
               </div>
               <button className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
@@ -111,14 +111,14 @@ export default function Funding() {
               <div className="text-2xl font-extralight mb-4">얼리버드</div>
               <div className="text-4xl font-extralight mb-2">₩49,000</div>
               <div className="text-sm font-light text-gray-400 line-through mb-8">₩69,000</div>
-              <div className="space-y-3 text-sm font-light text-gray-300 mb-12">
+              <div className="space-y-3 text-sm font-light text-gray-200 mb-12">
                 <div>• ChronoLink 물리 타이머 1개</div>
                 <div>• PC 연동 앱 라이선스</div>
                 <div>• BLE 무선 연결</div>
                 <div>• &apos;ChronoLink Pioneer&apos; 베타 테스터 자격</div>
                 <div>• 신기능 개발 우선 투표권</div>
               </div>
-              <div className="text-xs font-light text-gray-400 mb-6">
+              <div className="text-xs font-light text-gray-300 mb-6">
                 예상 배송: 2025년 3월
               </div>
               <button className="w-full py-3 bg-white text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-100 transition-all duration-500">
@@ -128,10 +128,10 @@ export default function Funding() {
 
             {/* Standard */}
             <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500">
-              <div className="text-sm font-light text-gray-500 tracking-wider uppercase mb-2">정가</div>
+              <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">정가</div>
               <div className="text-2xl font-extralight text-gray-900 mb-4">스킠다드</div>
               <div className="text-4xl font-extralight text-gray-900 mb-8">₩69,000</div>
-              <div className="space-y-3 text-sm font-light text-gray-600 mb-12">
+              <div className="space-y-3 text-sm font-light text-gray-800 mb-12">
                 <div>• ChronoLink 물리 타이머 1개</div>
                 <div>• 스키다드 기프트 박스</div>
                 <div>• 디지털 매뉴얼</div>
@@ -139,7 +139,7 @@ export default function Funding() {
                 <div>• 1년 보증</div>
                 <div>• 기본 지원</div>
               </div>
-              <div className="text-xs font-light text-gray-500 mb-6">
+              <div className="text-xs font-light text-gray-700 mb-6">
                 예상 배송: 2025년 4월
               </div>
               <button className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
@@ -157,7 +157,7 @@ export default function Funding() {
       <footer className="py-16 bg-white border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex justify-between items-center">
-            <div className="text-sm font-light tracking-[0.2em] uppercase text-gray-500">
+            <div className="text-sm font-light tracking-[0.2em] uppercase text-gray-700">
               ChronoLink © 2024
             </div>
           </div>
