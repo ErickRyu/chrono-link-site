@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 export default function Story() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -63,7 +63,7 @@ export default function Story() {
               <br />
               직장에 다니는 것조차
               <br />
-              '기적'이라고 했습니다.
+              &apos;기적&apos;이라고 했습니다.
             </p>
           </div>
 
@@ -89,7 +89,7 @@ export default function Story() {
 
           <div className="max-w-2xl mx-auto">
             <p className="text-lg font-light leading-loose text-gray-600 text-center">
-              '저 같은 사람도 쓸 수 있는 타이머'를.
+              &apos;저 같은 사람도 쓸 수 있는 타이머&apos;를.
               <br />
               물리적 접촉과 디지털 분석이 만나는 순간,
               <br />
