@@ -126,8 +126,11 @@ export default function FundingModal({ isOpen, onClose, packageType, price }: Fu
                   <h3 className="text-2xl font-light text-gray-900 mb-2">
                     후원 신청
                   </h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 mb-2">
                     {packageType} - {price}
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    * 실제 결제가 아닌 후원 의사 신청서입니다
                   </p>
                 </div>
                 <button

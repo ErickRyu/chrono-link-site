@@ -11,9 +11,9 @@ export default function Pricing() {
     {
       name: '슈퍼 얼리버드',
       badge: '초특가',
-      price: 39000,
-      originalPrice: 69000,
-      discount: 43,
+      price: 69000,
+      originalPrice: 99000,
+      discount: 30,
       description: '첫 50명 한정 초특가',
       stock: '12/50석 남음',
       features: [
@@ -31,9 +31,9 @@ export default function Pricing() {
     {
       name: '얼리버드',
       badge: '인기',
-      price: 49000,
-      originalPrice: 69000,
-      discount: 29,
+      price: 79000,
+      originalPrice: 99000,
+      discount: 20,
       description: '첫 200명 한정 특가',
       stock: '87/200석 남음',
       features: [
@@ -49,7 +49,7 @@ export default function Pricing() {
     },
     {
       name: '스탠다드',
-      price: 69000,
+      price: 99000,
       description: '일반 출시가',
       features: [
         'ChronoLink 물리 타이머 1개',
@@ -59,24 +59,6 @@ export default function Pricing() {
         '평생 무료 업데이트',
         '클라우드 백업',
         '1년 A/S 보장',
-      ],
-      popular: false,
-    },
-    {
-      name: '프로 번들',
-      badge: '베스트 밸류',
-      price: 149000,
-      originalPrice: 207000,
-      discount: 28,
-      description: '멀티 공간 활용 풀세트',
-      features: [
-        'ChronoLink 물리 타이머 3개',
-        'PC 연동 앱 라이선스 3개',
-        '프리미엄 케이스 & 액세서리',
-        '고급 분석 대시보드',
-        '베타 기능 조기 액세스',
-        '1:1 맞춤 설정 컨설팅',
-        '5년 A/S 보장',
       ],
       popular: false,
     },
