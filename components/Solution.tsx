@@ -31,7 +31,7 @@ export default function Solution() {
           <h2 className="text-5xl md:text-6xl font-extralight text-gray-900 tracking-wide mb-6">
             솔루션: ChronoLink
           </h2>
-          <p className="text-xl font-light text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl font-light text-gray-700 max-w-3xl mx-auto">
             다이얼을 돌리면 PC 타이머가 동기화되고,
             세션 종료 시 화면을 차단하여 과몰입을 중단시킵니다
           </p>
@@ -47,21 +47,21 @@ export default function Solution() {
                 <div className="w-1 h-1 bg-gray-900 rounded-full mt-2.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 mb-1">독립 모드 + PC 연동 모드</h4>
-                  <p className="text-gray-600 font-light">PC 없이도 독립적으로 사용 가능하며, 필요시 PC와 연동</p>
+                  <p className="text-gray-700 font-light">PC 없이도 독립적으로 사용 가능하며, 필요시 PC와 연동</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <div className="w-1 h-1 bg-gray-900 rounded-full mt-2.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 mb-1">촉각적 다이얼 인터페이스</h4>
-                  <p className="text-gray-600 font-light">물리적인 다이얼로 시간을 설정하는 직관적인 경험</p>
+                  <p className="text-gray-700 font-light">물리적인 다이얼로 시간을 설정하는 직관적인 경험</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <div className="w-1 h-1 bg-gray-900 rounded-full mt-2.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 mb-1">BLE 5.0 연결</h4>
-                  <p className="text-gray-600 font-light">저전력 블루투스로 안정적인 PC 연결</p>
+                  <p className="text-gray-700 font-light">저전력 블루투스로 안정적인 PC 연결</p>
                 </div>
               </li>
             </ul>
@@ -75,21 +75,21 @@ export default function Solution() {
                 <div className="w-1 h-1 bg-gray-900 rounded-full mt-2.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 mb-1">과몰입 중단</h4>
-                  <p className="text-gray-600 font-light">화면 차단, 호흡 휴식 유도로 강제 브레이크</p>
+                  <p className="text-gray-700 font-light">화면 차단, 호흡 휴식 유도로 강제 브레이크</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <div className="w-1 h-1 bg-gray-900 rounded-full mt-2.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 mb-1">집중 세션 기록 & 리포트</h4>
-                  <p className="text-gray-600 font-light">모든 집중 세션을 기록하고 패턴 분석 제공</p>
+                  <p className="text-gray-700 font-light">모든 집중 세션을 기록하고 패턴 분석 제공</p>
                 </div>
               </li>
               <li className="flex items-start gap-4">
                 <div className="w-1 h-1 bg-gray-900 rounded-full mt-2.5 flex-shrink-0" />
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 mb-1">플러그인 확장</h4>
-                  <p className="text-gray-600 font-light">n8n, Zapier 등과 연동하여 워크플로우 자동화</p>
+                  <p className="text-gray-700 font-light">n8n, Zapier 등과 연동하여 워크플로우 자동화</p>
                 </div>
               </li>
             </ul>
@@ -103,17 +103,17 @@ export default function Solution() {
             <div className="text-center">
               <div className="text-5xl mb-6">🚀</div>
               <h4 className="text-xl font-light text-gray-900 mb-3">집중의 시작</h4>
-              <p className="text-gray-600 font-light">짧게라도 쉽게 시작할 수 있도록</p>
+              <p className="text-gray-700 font-light">짧게라도 쉽게 시작할 수 있도록</p>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-6">🛑</div>
               <h4 className="text-xl font-light text-gray-900 mb-3">과몰입의 중단</h4>
-              <p className="text-gray-600 font-light">물리 + 디지털로 강제 차단</p>
+              <p className="text-gray-700 font-light">물리 + 디지털로 강제 차단</p>
             </div>
             <div className="text-center">
               <div className="text-5xl mb-6">🌱</div>
               <h4 className="text-xl font-light text-gray-900 mb-3">회복의 루틴</h4>
-              <p className="text-gray-600 font-light">브레이크 모드로 습관화</p>
+              <p className="text-gray-700 font-light">브레이크 모드로 습관화</p>
             </div>
           </div>
         </div>

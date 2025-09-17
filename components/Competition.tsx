@@ -35,7 +35,7 @@ export default function Competition() {
           <h2 className="text-5xl md:text-6xl font-extralight text-gray-900 tracking-wide mb-6">
             경쟁사 비교
           </h2>
-          <p className="text-xl font-light text-gray-600">
+          <p className="text-xl font-light text-gray-700">
             기존 솔루션의 한계를 넘어선 통합 경험
           </p>
         </div>
@@ -55,10 +55,10 @@ export default function Competition() {
                   <td className={`py-6 px-6 ${item.chronolink ? 'font-medium' : 'font-light'} text-gray-900 border-b border-gray-100`}>
                     {item.name}
                   </td>
-                  <td className={`py-6 px-6 font-light ${item.chronolink ? 'text-green-700' : 'text-gray-600'} border-b border-gray-100`}>
+                  <td className={`py-6 px-6 font-light ${item.chronolink ? 'text-green-700' : 'text-gray-700'} border-b border-gray-100`}>
                     {item.pros}
                   </td>
-                  <td className={`py-6 px-6 font-light ${item.chronolink ? 'text-gray-400' : 'text-red-700'} border-b border-gray-100`}>
+                  <td className={`py-6 px-6 font-light ${item.chronolink ? 'text-gray-500' : 'text-red-700'} border-b border-gray-100`}>
                     {item.cons}
                   </td>
                 </tr>
@@ -72,19 +72,19 @@ export default function Competition() {
           <ul className="space-y-3">
             <li className="flex items-start gap-3">
               <span className="text-green-600 mt-1">✓</span>
-              <span className="font-light text-gray-700">물리적 인터페이스와 디지털 분석의 결합</span>
+              <span className="font-light text-gray-800">물리적 인터페이스와 디지털 분석의 결합</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-600 mt-1">✓</span>
-              <span className="font-light text-gray-700">PC 화면 차단으로 과몰입 강제 중단</span>
+              <span className="font-light text-gray-800">PC 화면 차단으로 과몰입 강제 중단</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-600 mt-1">✓</span>
-              <span className="font-light text-gray-700">API 연동으로 무한한 확장 가능성</span>
+              <span className="font-light text-gray-800">API 연동으로 무한한 확장 가능성</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-green-600 mt-1">✓</span>
-              <span className="font-light text-gray-700">ADHD 당사자가 직접 설계한 UX</span>
+              <span className="font-light text-gray-800">ADHD 당사자가 직접 설계한 UX</span>
             </li>
           </ul>
         </div>

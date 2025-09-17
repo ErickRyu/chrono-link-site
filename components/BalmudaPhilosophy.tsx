@@ -20,7 +20,7 @@ export default function BalmudaPhilosophy() {
           </div>
 
           <div className="max-w-2xl mx-auto">
-            <p className="text-lg font-light leading-loose text-gray-600 text-center">
+            <p className="text-lg font-light leading-loose text-gray-700 text-center">
               알림에 쫓기고, 화면에 갇혔습니다.
               <br />
               생산성을 추구하며 오히려 산만해졌고,
@@ -42,7 +42,7 @@ export default function BalmudaPhilosophy() {
           </div>
 
           <div className="max-w-2xl mx-auto">
-            <p className="text-lg font-light leading-loose text-gray-600 text-center">
+            <p className="text-lg font-light leading-loose text-gray-700 text-center">
               손끝에서 시작되는 집중.
               <br />
               다이얼을 돌리는 순간,
@@ -54,7 +54,7 @@ export default function BalmudaPhilosophy() {
           <div className="w-16 h-[1px] bg-gray-300 mx-auto" />
 
           <div className="max-w-xl mx-auto">
-            <p className="text-base font-light leading-loose text-gray-500 text-center italic">
+            <p className="text-base font-light leading-loose text-gray-600 text-center italic">
               &ldquo;최고의 도구는 필요에서 태어나는 것이 아니라
               <br />
               욕망에서 태어납니다.

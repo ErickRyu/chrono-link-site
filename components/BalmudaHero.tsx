@@ -46,10 +46,10 @@ export default function BalmudaHero() {
 
         {/* Subheadline - founder story */}
         <div className={`mb-16 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-all duration-[1500ms] delay-500 ease-out`}>
-          <p className="text-lg md:text-xl font-light text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl font-light text-gray-800 leading-relaxed max-w-3xl mx-auto">
             ADHD 당사자의 경험에서 시작된 집중 & 회복 플랫폼
             <br />
-            <span className="text-base text-gray-500 mt-2 block">
+            <span className="text-base text-gray-700 mt-2 block">
               "직장을 다니는 것 자체가 기적"이라는 말을 들을 정도로 어려웠던
               <br />
               창업자가 같은 문제를 겪는 사람들을 위해 만든 솔루션

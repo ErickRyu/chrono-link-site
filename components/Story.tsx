@@ -43,7 +43,7 @@ export default function Story() {
                 집중을 시작하지 못하는 사람들
               </h3>
             </div>
-            <div className="text-gray-600 font-light">
+            <div className="text-gray-700 font-light">
               <p className="mb-3">작업을 시작하는 것 자체가 너무 높은 벽이 됩니다.</p>
               <p>생각만 하고 행동으로 옮기지 못합니다.</p>
             </div>
@@ -57,7 +57,7 @@ export default function Story() {
                 과몰입에서 벗어나지 못하는 사람들
               </h3>
             </div>
-            <div className="text-gray-600 font-light">
+            <div className="text-gray-700 font-light">
               <p className="mb-3">한 번 시작하면 몇 시간이고 멈추지 못합니다.</p>
               <p>식사도 거르고 화장실도 참습니다.</p>
             </div>
@@ -74,21 +74,21 @@ export default function Story() {
               <div className="text-center">
                 <div className="text-4xl mb-4">📱</div>
                 <h4 className="text-lg font-medium text-gray-900 mb-2">모바일 앱</h4>
-                <p className="text-sm text-gray-600 font-light">
+                <p className="text-sm text-gray-700 font-light">
                   주의 분산의 원인이 되는 기기에서 실행
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">💻</div>
                 <h4 className="text-lg font-medium text-gray-900 mb-2">소프트웨어만</h4>
-                <p className="text-sm text-gray-600 font-light">
+                <p className="text-sm text-gray-700 font-light">
                   물리적 강제력 부족, 무시하기 쉽움
                 </p>
               </div>
               <div className="text-center">
                 <div className="text-4xl mb-4">⏲️</div>
                 <h4 className="text-lg font-medium text-gray-900 mb-2">물리 타이머</h4>
-                <p className="text-sm text-gray-600 font-light">
+                <p className="text-sm text-gray-700 font-light">
                   PC와 단절, 데이터 추적 불가
                 </p>
               </div>
