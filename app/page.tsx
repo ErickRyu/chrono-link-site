@@ -3,6 +3,7 @@ import Story from '@/components/Story';
 import Solution from '@/components/Solution';
 import Competition from '@/components/Competition';
 import Progress from '@/components/Progress';
+import Timeline from '@/components/Timeline';
 import BalmudaPhilosophy from '@/components/BalmudaPhilosophy';
 import BalmudaFooter from '@/components/BalmudaFooter';
 import Link from 'next/link';
@@ -34,6 +35,7 @@ export default function Home() {
         <Story />
         <Solution />
         <Competition />
+        <Timeline />
         <div id="philosophy">
           <BalmudaPhilosophy />
         </div>
