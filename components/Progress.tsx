@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 export default function Progress() {
   return (
     <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
@@ -15,19 +17,40 @@ export default function Progress() {
 
         <div className="grid md:grid-cols-3 gap-12 mb-20">
           <div className="text-center">
-            <div className="text-6xl mb-6">🔧</div>
+            <div className="mb-6 relative h-48 bg-gray-100 rounded-lg overflow-hidden">
+              <Image
+                src="/chronolink-device.jpg"
+                alt="ChronoLink 하드웨어 프로토타입"
+                fill
+                className="object-cover"
+              />
+            </div>
             <h3 className="text-xl font-medium text-gray-900 mb-3">시제품 완성</h3>
             <p className="text-gray-700 font-light">ESP32-S3 기반<br />하드웨어 프로토타입</p>
           </div>
           <div className="text-center">
-            <div className="text-6xl mb-6">📱</div>
+            <div className="mb-6 relative h-48 bg-gray-100 rounded-lg overflow-hidden">
+              <Image
+                src="/synarae-app.png"
+                alt="Synarae 데스크톱 앱"
+                fill
+                className="object-cover"
+              />
+            </div>
             <h3 className="text-xl font-medium text-gray-900 mb-3">앱 알파 버전</h3>
             <p className="text-gray-700 font-light">Windows/macOS<br />데스크톱 앱 개발 중</p>
           </div>
           <div className="text-center">
-            <div className="text-6xl mb-6">🚀</div>
-            <h3 className="text-xl font-medium text-gray-900 mb-3">펀딩 준비</h3>
-            <p className="text-gray-700 font-light">2025년 9월<br />크라우드 펀딩 예정</p>
+            <div className="mb-6 relative h-48 bg-gray-100 rounded-lg overflow-hidden">
+              <Image
+                src="/working-sign.png"
+                alt="작업중 사인"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <h3 className="text-xl font-medium text-gray-900 mb-3">화면 차단 모드</h3>
+            <p className="text-gray-700 font-light">화면 차단으로<br />과몰입 강제 중단</p>
           </div>
         </div>
 
