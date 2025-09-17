@@ -29,74 +29,71 @@ export default function Story() {
         {/* Story title */}
         <div className="mb-32 text-center">
           <h2 className="text-5xl md:text-6xl font-extralight text-gray-900 tracking-wide">
-            Origin
+            문제 정의
           </h2>
         </div>
 
-        {/* Main story narrative */}
-        <div className="space-y-24">
-          <div className="max-w-3xl mx-auto">
-            <p className="text-2xl md:text-3xl font-extralight leading-relaxed text-gray-800 text-center">
-              시중의 모든 타이머를
-              <br />
-              시도해봤습니다.
-            </p>
+        {/* Main story narrative - problem definition */}
+        <div className="space-y-20">
+          {/* Problem 1 */}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-right">
+              <div className="text-6xl mb-4">🤔</div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">
+                집중을 시작하지 못하는 사람들
+              </h3>
+            </div>
+            <div className="text-gray-600 font-light">
+              <p className="mb-3">작업을 시작하는 것 자체가 너무 높은 벽이 됩니다.</p>
+              <p>생각만 하고 행동으로 옮기지 못합니다.</p>
+            </div>
           </div>
 
-          <div className="max-w-2xl mx-auto">
-            <p className="text-lg font-light leading-loose text-gray-600 text-center">
-              10개 이상의 디지털 앱들과 물리적 타이머들.
-              <br />
-              각각은 기능적으로 완벽했지만,
-              <br />
-              무언가 빠져있었습니다.
-            </p>
+          {/* Problem 2 */}
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div className="text-center md:text-right">
+              <div className="text-6xl mb-4">😵</div>
+              <h3 className="text-2xl font-light text-gray-900 mb-4">
+                과몰입에서 벗어나지 못하는 사람들
+              </h3>
+            </div>
+            <div className="text-gray-600 font-light">
+              <p className="mb-3">한 번 시작하면 몇 시간이고 멈추지 못합니다.</p>
+              <p>식사도 거르고 화장실도 참습니다.</p>
+            </div>
           </div>
 
-          <div className="w-16 h-[1px] bg-gray-300 mx-auto" />
+          <div className="w-32 h-[1px] bg-gray-300 mx-auto my-16" />
 
-          <div className="max-w-3xl mx-auto">
-            <p className="text-2xl md:text-3xl font-extralight leading-relaxed text-gray-800 text-center">
-              집중력과 퍼포먼스가
-              <br />
-              너무 떨어져
-              <br />
-              직장에 다니는 것조차
-              <br />
-              &apos;기적&apos;이라고 했습니다.
-            </p>
+          {/* Existing solutions limitations */}
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-3xl font-extralight text-gray-900 text-center mb-12">
+              기존 솔루션의 한계
+            </h3>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="text-center">
+                <div className="text-4xl mb-4">📱</div>
+                <h4 className="text-lg font-medium text-gray-900 mb-2">모바일 앱</h4>
+                <p className="text-sm text-gray-600 font-light">
+                  주의 분산의 원인이 되는 기기에서 실행
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-4">💻</div>
+                <h4 className="text-lg font-medium text-gray-900 mb-2">소프트웨어만</h4>
+                <p className="text-sm text-gray-600 font-light">
+                  물리적 강제력 부족, 무시하기 쉽움
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl mb-4">⏲️</div>
+                <h4 className="text-lg font-medium text-gray-900 mb-2">물리 타이머</h4>
+                <p className="text-sm text-gray-600 font-light">
+                  PC와 단절, 데이터 추적 불가
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div className="max-w-2xl mx-auto">
-            <p className="text-lg font-light leading-loose text-gray-600 text-center">
-              시간과 집중을 다루는 어려움.
-              <br />
-              ADHD는 아니지만, 그 스펙트럼 어딘가에서
-              <br />
-              지속성을 찾기 위해 고군분투했습니다.
-            </p>
-          </div>
-
-          <div className="w-16 h-[1px] bg-gray-300 mx-auto" />
-
-          <div className="max-w-3xl mx-auto">
-            <p className="text-2xl md:text-3xl font-extralight leading-relaxed text-gray-800 text-center">
-              그래서 직접
-              <br />
-              만들었습니다.
-            </p>
-          </div>
-
-          <div className="max-w-2xl mx-auto">
-            <p className="text-lg font-light leading-loose text-gray-600 text-center">
-              &apos;저 같은 사람도 쓸 수 있는 타이머&apos;를.
-              <br />
-              물리적 접촉과 디지털 분석이 만나는 순간,
-              <br />
-              시간은 단순한 측정이 아닌 경험이 됩니다.
-            </p>
-          </div>
-
         </div>
 
         {/* Closing statement - minimal */}

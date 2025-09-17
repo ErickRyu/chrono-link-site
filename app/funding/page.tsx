@@ -85,18 +85,18 @@ export default function Funding() {
             <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500 relative flex flex-col">
               <div className="absolute top-4 right-4">
                 <span className="bg-gray-900 text-white px-3 py-1 text-xs font-light tracking-wider uppercase">
-                  -30%
+                  -25%
                 </span>
               </div>
               <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">한정 시간</div>
               <div className="text-2xl font-extralight text-gray-900 mb-4">슈퍼 얼리버드</div>
-              <div className="text-4xl font-extralight text-gray-900 mb-2">₩69,000</div>
-              <div className="text-sm font-light text-gray-700 line-through mb-8">₩99,000</div>
+              <div className="text-4xl font-extralight text-gray-900 mb-2">₩89,000</div>
+              <div className="text-sm font-light text-gray-700 line-through mb-8">₩119,000</div>
               <div className="text-xs font-light text-gray-700 mb-6 flex-grow flex items-end justify-center">
                 <span>한정: 50개 중 {stats.super_early_bird_remaining}개 남음</span>
               </div>
-              <button 
-                onClick={() => handleSelectTier('슈퍼 얼리버드', '₩69,000')}
+              <button
+                onClick={() => handleSelectTier('슈퍼 얼리버드', '₩89,000')}
                 className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
                 선택하기
               </button>
@@ -111,17 +111,17 @@ export default function Funding() {
               </div>
               <div className="absolute top-4 right-4">
                 <span className="bg-white text-gray-900 px-3 py-1 text-xs font-light tracking-wider uppercase">
-                  -20%
+                  -16%
                 </span>
               </div>
               <div className="text-2xl font-extralight mb-4">얼리버드</div>
-              <div className="text-4xl font-extralight mb-2">₩79,000</div>
-              <div className="text-sm font-light text-gray-400 line-through mb-8">₩99,000</div>
+              <div className="text-4xl font-extralight mb-2">₩99,000</div>
+              <div className="text-sm font-light text-gray-400 line-through mb-8">₩119,000</div>
               <div className="flex-grow flex items-end justify-center mb-6">
                 <span className="text-xs font-light text-transparent">.</span>
               </div>
-              <button 
-                onClick={() => handleSelectTier('얼리버드', '₩79,000')}
+              <button
+                onClick={() => handleSelectTier('얼리버드', '₩99,000')}
                 className="w-full py-3 bg-white text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-100 transition-all duration-500">
                 선택하기
               </button>
@@ -131,12 +131,12 @@ export default function Funding() {
             <div className="bg-[#FAFAFA] p-12 text-center group hover:bg-gray-50 transition-all duration-500 flex flex-col">
               <div className="text-sm font-light text-gray-700 tracking-wider uppercase mb-2">정가</div>
               <div className="text-2xl font-extralight text-gray-900 mb-4">스탠다드</div>
-              <div className="text-4xl font-extralight text-gray-900 mb-8">₩99,000</div>
+              <div className="text-4xl font-extralight text-gray-900 mb-8">₩119,000</div>
               <div className="flex-grow flex items-end justify-center mb-6">
                 <span className="text-xs font-light text-transparent">.</span>
               </div>
-              <button 
-                onClick={() => handleSelectTier('스탠다드', '₩99,000')}
+              <button
+                onClick={() => handleSelectTier('스탠다드', '₩119,000')}
                 className="w-full py-3 border border-gray-900 text-gray-900 font-light tracking-wider text-sm uppercase hover:bg-gray-900 hover:text-white transition-all duration-500">
                 선택하기
               </button>

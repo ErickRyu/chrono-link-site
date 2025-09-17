@@ -35,21 +35,25 @@ export default function BalmudaHero() {
           </div>
         </div>
 
-        {/* Main headline - poetic and powerful */}
+        {/* Main headline - brand mission */}
         <div className={`mb-12 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-all duration-[1500ms] delay-300 ease-out`}>
-          <h1 className="text-6xl md:text-7xl lg:text-8xl font-extralight tracking-wide leading-[1.1] text-gray-900">
-            시간을
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight tracking-wide leading-[1.2] text-gray-900">
+            시간을 끊어내고,
             <br />
-            만지다
+            <span className="font-light">집중을 회복하다</span>
           </h1>
         </div>
 
-        {/* Subheadline - philosophical */}
+        {/* Subheadline - founder story */}
         <div className={`mb-16 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-all duration-[1500ms] delay-500 ease-out`}>
-          <p className="text-lg md:text-xl font-light text-gray-600 leading-relaxed max-w-2xl mx-auto">
-            우리는 보이지 않는 시간을
+          <p className="text-lg md:text-xl font-light text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            ADHD 당사자의 경험에서 시작된 집중 & 회복 플랫폼
             <br />
-            만질 수 있는 경험으로 바꿉니다
+            <span className="text-base text-gray-500 mt-2 block">
+              "직장을 다니는 것 자체가 기적"이라는 말을 들을 정도로 어려웠던
+              <br />
+              창업자가 같은 문제를 겪는 사람들을 위해 만든 솔루션
+            </span>
           </p>
         </div>
 

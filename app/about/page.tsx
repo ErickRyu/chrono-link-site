@@ -146,9 +146,9 @@ export default function AboutPage() {
                     <span className="text-2xl font-bold text-gray-300">2025</span>
                   </div>
                   <div className="flex-1">
-                    <h3 className="text-xl font-semibold mb-3">Kickstarter 런칭</h3>
+                    <h3 className="text-xl font-semibold mb-3">제품 출시 준비</h3>
                     <p className="text-gray-600">
-                      드디어 ChronoLink를 세상에 선보입니다.
+                      ChronoLink를 세상에 선보일 준비를 하고 있습니다.
                       더 많은 사람들이 시간의 주인이 되도록 돕겠습니다.
                     </p>
                   </div>
@@ -189,9 +189,9 @@ export default function AboutPage() {
               우리는 단순히 제품을 판매하는 것이 아니라,
               더 나은 삶의 방식을 제안합니다.
             </p>
-            <button className="bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-colors">
-              지금 동참하기
-            </button>
+            <a href="mailto:rkggmdii@gmail.com" className="inline-block bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-colors">
+              문의하기
+            </a>
           </div>
         </section>
       </main>
