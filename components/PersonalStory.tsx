@@ -45,8 +45,8 @@ export default function PersonalStory() {
 
             <blockquote className="border-l-4 border-gray-900 pl-8 my-12">
               <p className="text-2xl font-light italic text-gray-900">
-                "회의 시간을 또 놓쳤네요.
-                하나만 끝내려고 했는데 베서 3시간이 지나갔어요."
+                &ldquo;회의 시간을 또 놓쳤네요.
+                하나만 끝내려고 했는데 베서 3시간이 지나갅4어요.&rdquo;
               </p>
             </blockquote>
 
@@ -75,8 +75,8 @@ export default function PersonalStory() {
             <p className="text-gray-700 font-light leading-relaxed">
               그래서 직접 만들기 시작했습니다.
               PC용으로 간단한 타이머를 구현해 쓰면서,
-              "내가 만든 프로그램에서 아쉬운 점들을 더 개선한다면 무엇일까?"
-              "어떤 기능이 있으면 매일 사용하게 될까?" 이런 고민을 계속했습니다.
+              &ldquo;내가 만든 프로그램에서 아쉬운 점들을 더 개선한다면 무엇일까?&rdquo;
+              &ldquo;어떤 기능이 있으면 매일 사용하게 될까?&rdquo; 이런 고민을 계속했습니다.
             </p>
 
             <p className="text-gray-700 font-light leading-relaxed">
@@ -94,8 +94,8 @@ export default function PersonalStory() {
               ChronoLink는 그렇게 탄생했습니다
             </h3>
             <p className="text-lg font-light leading-relaxed mb-8">
-              "나만 이런 게 어렵나?"라는 질문에서 출발해,<br/>
-              "여러분도 어렵죠?"라는 공감으로 이어지는 도구입니다.
+              &ldquo;나만 이런 게 어렵나?&rdquo;라는 질문에서 출발해,<br/>
+              &ldquo;여러분도 어렵죠?&rdquo;라는 공감으로 이어지는 도구입니다.
             </p>
             <p className="text-xl font-medium">
               ChronoLink는 제품이 아니라,<br/>

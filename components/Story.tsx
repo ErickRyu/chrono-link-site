@@ -54,7 +54,7 @@ export default function Story() {
             손은 지치고 마음은 무너져 더 이상 하고 싶지 않은 상태가 반복됐습니다.
           </p>
           <p className="text-gray-900 font-medium text-xl leading-relaxed mb-8">
-            "나만 이런 게 어렵나?"
+            &ldquo;나만 이런 게 어렵나?&rdquo;
           </p>
         </div>
 
@@ -71,12 +71,12 @@ export default function Story() {
             <div className="text-center md:text-right">
               <div className="text-6xl mb-4">🤔</div>
               <h3 className="text-2xl font-light text-gray-900 mb-4">
-                "5분만 하자"가 어려운 분들
+                &ldquo;5분만 하자&rdquo;가 어려운 분들
               </h3>
             </div>
             <div className="text-gray-700 font-light">
               <p className="mb-3">작업을 시작하는 것 자체가 너무 높은 벽이 됩니다.</p>
-              <p>"일단 시작하면 되는데" 그 시작이 제일 어렵습니다.</p>
+              <p>&ldquo;일단 시작하면 되는데&rdquo; 그 시작이 제일 어렵습니다.</p>
             </div>
           </div>
 
@@ -100,12 +100,12 @@ export default function Story() {
           <div className="max-w-4xl mx-auto mb-20">
             <div className="prose prose-lg">
               <p className="text-gray-700 font-light leading-relaxed mb-8 text-center italic">
-                "타임타이머, 큐브 타이머, 모래시계, 전자시계까지...<br/>
-                도움이 될 것 같은 제품들을 모조리 사봤지만 결국 쓰지 않게 되더군요."
+                &ldquo;타임타이머, 큐브 타이머, 모래시계, 전자시계까지...<br/>
+                도움이 될 것 같은 제품들을 모조리 사봤지만 결국 쓰지 않게 되더군요.&rdquo;
               </p>
               <p className="text-gray-700 font-light leading-relaxed mb-8">
                 앱도 여러가지 설치해서 사용해봤습니다. 뽀모도로 타이머, 집중력 향상 앱, 습관 관리 앱...
-                처음엔 분명 도움이 되었습니다. "5분만 하자"라는 시작을 도와주었고,
+                처음엔 분명 도움이 되었습니다. &ldquo;5분만 하자&rdquo;라는 시작을 도와주었고,
                 과몰입을 끊어내는 데에도 효과가 있었죠. 하지만 곧 한계를 느꼈습니다.
               </p>
               <p className="text-gray-700 font-light leading-relaxed mb-12">
@@ -193,7 +193,7 @@ export default function Story() {
               결국 만들어냈는지를 담고 싶습니다.
             </p>
             <p className="text-xl font-medium text-gray-900 mt-12">
-              "여러분도 어렵죠? 함께 해결해요."
+              &ldquo;여러분도 어렵죠? 함께 해결해요.&rdquo;
             </p>
           </div>
         </div>
