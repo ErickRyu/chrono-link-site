@@ -1,5 +1,7 @@
 import BalmudaHero from '@/components/BalmudaHero';
 import Story from '@/components/Story';
+import PersonalStory from '@/components/PersonalStory';
+import ProductShowcase from '@/components/ProductShowcase';
 import Solution from '@/components/Solution';
 import Competition from '@/components/Competition';
 import Progress from '@/components/Progress';
@@ -33,6 +35,8 @@ export default function Home() {
       <main>
         <BalmudaHero />
         <Story />
+        <PersonalStory />
+        <ProductShowcase />
         <Solution />
         <Competition />
         <Timeline />
