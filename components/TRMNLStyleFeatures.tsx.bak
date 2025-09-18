@@ -6,7 +6,7 @@ export default function TRMNLStyleFeatures() {
 
   const features = [
     {
-      icon: '',
+      icon: '🎯',
       title: 'Physical Focus',
       subtitle: '물리적 다이얼의 힘',
       description: 'MIT 연구: 물리적 인터페이스는 디지털보다 43% 높은 작업 완료율',
@@ -14,7 +14,7 @@ export default function TRMNLStyleFeatures() {
       statLabel: '작업 완료율 증가'
     },
     {
-      icon: '',
+      icon: '📱',
       title: 'BLE Connection',
       subtitle: '무선으로 연결되는 생산성',
       description: 'PC와 실시간 동기화되어 화면을 자동으로 차단하고 집중을 유도',
@@ -30,7 +30,7 @@ export default function TRMNLStyleFeatures() {
       statLabel: '배터리 수명'
     },
     {
-      icon: '',
+      icon: '🧠',
       title: 'ADHD Friendly',
       subtitle: '과학적으로 설계된 집중',
       description: '237명의 ADHD 베타테스터가 검증한 집중력 향상 효과',
@@ -154,7 +154,7 @@ export default function TRMNLStyleFeatures() {
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="text-4xl mb-4"></div>
+              <div className="text-4xl mb-4">❌</div>
               <h4 className="font-bold mb-2">스마트폰 앱</h4>
               <p className="text-gray-400 text-sm">
                 알림과 SNS의 유혹
@@ -165,7 +165,7 @@ export default function TRMNLStyleFeatures() {
               </p>
             </div>
             <div className="text-center">
-              <div className="text-4xl mb-4">⚠</div>
+              <div className="text-4xl mb-4">⚠️</div>
               <h4 className="font-bold mb-2">일반 타이머</h4>
               <p className="text-gray-400 text-sm">
                 데이터 추적 불가
@@ -176,7 +176,7 @@ export default function TRMNLStyleFeatures() {
               </p>
             </div>
             <div className="text-center border-2 border-white rounded-xl p-4">
-              <div className="text-4xl mb-4"></div>
+              <div className="text-4xl mb-4">✅</div>
               <h4 className="font-bold mb-2">ChronoLink</h4>
               <p className="text-sm">
                 물리적 만족감

@@ -70,9 +70,9 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-8 text-gray-500 text-xs">
             <span>🔒 SSL 보안 결제</span>
             <span>📦 무료 배송</span>
-            <span>↩ 30일 환불 보장</span>
-            <span> 5년 A/S 보증</span>
-            <span> 237명 베타테스터 검증</span>
+            <span>↩️ 30일 환불 보장</span>
+            <span>🛡️ 5년 A/S 보증</span>
+            <span>🏆 237명 베타테스터 검증</span>
           </div>
         </div>
       </div>

@@ -101,7 +101,7 @@ export default function Solution() {
           <h3 className="text-3xl font-extralight text-gray-900 text-center mb-16">주요 가치 제안</h3>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="text-center">
-              <div className="text-5xl mb-6"></div>
+              <div className="text-5xl mb-6">🚀</div>
               <h4 className="text-xl font-light text-gray-900 mb-3">집중의 시작</h4>
               <p className="text-gray-700 font-light">짧게라도 쉽게 시작할 수 있도록</p>
             </div>
@@ -111,7 +111,7 @@ export default function Solution() {
               <p className="text-gray-700 font-light">물리 + 디지털로 강제 차단</p>
             </div>
             <div className="text-center">
-              <div className="text-5xl mb-6"></div>
+              <div className="text-5xl mb-6">🌱</div>
               <h4 className="text-xl font-light text-gray-900 mb-3">회복의 루틴</h4>
               <p className="text-gray-700 font-light">브레이크 모드로 습관화</p>
             </div>

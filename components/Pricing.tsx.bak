@@ -210,12 +210,12 @@ export default function Pricing() {
           </div>
           <div className="grid md:grid-cols-4 gap-6 mt-8">
             <div>
-              <div className="text-3xl mb-2"></div>
+              <div className="text-3xl mb-2">↩</div>
               <div className="font-semibold">30일 환불 보장</div>
               <div className="text-sm text-gray-600">무조건 100% 환불</div>
             </div>
             <div>
-              <div className="text-3xl mb-2"></div>
+              <div className="text-3xl mb-2">📦</div>
               <div className="font-semibold">무료 배송</div>
               <div className="text-sm text-gray-600">전국 무료</div>
             </div>
@@ -225,7 +225,7 @@ export default function Pricing() {
               <div className="text-sm text-gray-600">최대 5년 A/S</div>
             </div>
             <div>
-              <div className="text-3xl mb-2"></div>
+              <div className="text-3xl mb-2">🔒</div>
               <div className="font-semibold">안전한 결제</div>
               <div className="text-sm text-gray-600">SSL 암호화</div>
             </div>
