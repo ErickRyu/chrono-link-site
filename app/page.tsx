@@ -13,18 +13,18 @@ import './balmuda-globals.css';
 
 export default function Home() {
   return (
-    <div className="font-['Helvetica_Neue'] bg-[#FAFAFA]">
+    <div className="font-['Helvetica_Neue'] bg-black">
       {/* Minimal Navigation */}
-      <nav className="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm">
+      <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6 flex justify-between items-center">
-          <div className="text-xs sm:text-sm font-light tracking-[0.1em] sm:tracking-[0.2em] uppercase">
+          <div className="text-xs sm:text-sm font-light tracking-[0.1em] sm:tracking-[0.2em] uppercase text-white">
             ChronoLink
           </div>
           <div className="flex gap-6 sm:gap-8 lg:gap-12">
-            <Link href="/" className="text-xs sm:text-sm font-light text-gray-900 border-b border-gray-900">
+            <Link href="/" className="text-xs sm:text-sm font-light text-white border-b border-white">
               About
             </Link>
-            <Link href="/funding" className="text-xs sm:text-sm font-light text-gray-600 hover:text-gray-900 transition-colors duration-500">
+            <Link href="/funding" className="text-xs sm:text-sm font-light text-gray-400 hover:text-white transition-colors duration-500">
               Funding
             </Link>
           </div>
@@ -46,7 +46,7 @@ export default function Home() {
         <Progress />
 
         {/* Contact Section */}
-        <section className="py-12 sm:py-16 lg:py-20 bg-gray-900 text-white">
+        <section className="py-12 sm:py-16 lg:py-20 bg-gray-950 text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-2xl sm:text-3xl font-extralight mb-4 sm:mb-6 lg:mb-8">Contact</h2>
             <p className="text-lg sm:text-xl font-light mb-3 sm:mb-4">성진 류 · Founder</p>
