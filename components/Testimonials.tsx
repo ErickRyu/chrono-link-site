@@ -45,10 +45,10 @@ export default function Testimonials() {
   ];
 
   const stats = [
-    { value: '237명', label: '베타 테스터' },
-    { value: '4.8/5.0', label: '평균 만족도' },
-    { value: '89%', label: '재구매 의향' },
-    { value: '2.3시간', label: '일일 집중력 증가' },
+    { value: '진행중', label: '베타 테스트' },
+    { value: '4.8/5.0', label: '목표 만족도' },
+    { value: '89%', label: '집중력 개선 목표' },
+    { value: '2.3시간', label: '일일 집중력 목표' },
   ];
 
   const nextTestimonial = () => {
@@ -65,10 +65,10 @@ export default function Testimonials() {
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            베타 테스터들의 이야기
+            사용자들의 이야기
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            6개월간의 베타 테스트, 237명의 검증
+            ChronoLink와 함께하는 변화의 순간들
           </p>
         </div>
 
@@ -173,10 +173,10 @@ export default function Testimonials() {
         {/* CTA */}
         <div className="text-center mt-12">
           <p className="text-lg text-gray-600 mb-6">
-            237명의 베타테스터와 함께 집중력 혁명에 동참하세요
+            당신도 시간의 주인이 될 수 있습니다
           </p>
           <button className="bg-black text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors">
-            지금 구매하기
+            함께하기
           </button>
         </div>
       </div>

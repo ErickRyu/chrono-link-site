@@ -1,8 +1,12 @@
 import BalmudaHero from '@/components/BalmudaHero';
 import Story from '@/components/Story';
+import PersonalStory from '@/components/PersonalStory';
+import ProductShowcase from '@/components/ProductShowcase';
+import Solution from '@/components/Solution';
+import Competition from '@/components/Competition';
+import Progress from '@/components/Progress';
+import Timeline from '@/components/Timeline';
 import BalmudaPhilosophy from '@/components/BalmudaPhilosophy';
-import BalmudaDesign from '@/components/BalmudaDesign';
-import BalmudaExperience from '@/components/BalmudaExperience';
 import BalmudaFooter from '@/components/BalmudaFooter';
 import '../balmuda-globals.css';
 
@@ -36,38 +40,15 @@ export default function BalmudaPage() {
       <main>
         <BalmudaHero />
         <Story />
+        <PersonalStory />
+        <ProductShowcase />
+        <Solution />
+        <Competition />
+        <Timeline />
         <div id="philosophy">
           <BalmudaPhilosophy />
         </div>
-        <div id="design">
-          <BalmudaDesign />
-        </div>
-        <div id="experience">
-          <BalmudaExperience />
-        </div>
-        
-        {/* Minimal Purchase Section */}
-        <section className="py-40 bg-[#FAFAFA]">
-          <div className="max-w-4xl mx-auto px-8 text-center">
-            <h2 className="text-5xl md:text-6xl font-extralight text-gray-900 tracking-wide mb-8">
-              Own Your Time
-            </h2>
-            <p className="text-xl font-light text-gray-600 mb-16">
-              Limited Edition. Crafted with Purpose.
-            </p>
-            <div className="space-y-4">
-              <div className="text-4xl font-extralight text-gray-900">
-                ₩69,000
-              </div>
-              <div className="text-sm font-light text-gray-500 tracking-wider uppercase">
-                Early Bird Special: ₩39,000
-              </div>
-              <button className="mt-8 px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
-                Purchase
-              </button>
-            </div>
-          </div>
-        </section>
+        <Progress />
 
         <BalmudaFooter />
       </main>

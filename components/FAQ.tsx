@@ -1,23 +1,23 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, HelpCircle, MessageCircle } from 'lucide-react';
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: '왜 스마트폰 앱만으로는 부족한가요?',
-      answer: '스마트폰을 켜는 순간 우리는 수많은 알림과 유혹에 노출됩니다. MIT 연구에 따르면, 물리적 인터페이스는 디지털보다 43% 더 높은 작업 완료율을 보입니다. ChronoLink는 스마트폰 없이도 타이머를 설정할 수 있어, 진정한 디지털 디톡스가 가능합니다.',
+      question: '🤔 "또 안 쓰게 되는 거 아닐까요?"',
+      answer: '저도 그랬어요. 타임타이머, 큐브 타이머, 뽀모도로 앱... 다 써봤지만 결국 서랍 속에 처박히게 됐죠. ChronoLink가 다른 점은, 단순한 알람이 아니라 "좋은 몰입을 설계해주는 구조"라는 것입니다. 다이얼을 돌리는 촉각적 경험이 뇌에 시작 신호를 보내고, PC 화면 차단으로 휴식을 강제합니다.',
     },
     {
-      question: 'PC 앱 없이도 사용할 수 있나요?',
-      answer: '네, 완전히 독립적으로 작동합니다! 물리 타이머만으로도 모든 기본 기능(타이머, 알람, 뽀모도로)을 사용할 수 있습니다. PC 앱은 통계 분석, 목표 설정, 클라우드 백업 등의 추가 기능을 제공합니다.',
+      question: '📱 "스마트폰 앱이나 타이머랑 뭐가 다른가요?"',
+      answer: '스마트폰을 켜는 순간, 카톡 알림, 인스타 DM, 유튜브 추천... 주의 분산의 파티가 시작됩니다. 물리적 타이머는 폰에서 단절되어 있지만 데이터 추적이 안 돼죠. ChronoLink는 둘의 장점만 가져왔습니다 - 스마트폰 없이 사용 가능, PC와 연동해 데이터 추적.',
     },
     {
-      question: 'ADHD가 없어도 유용한가요?',
-      answer: '물론입니다! ChronoLink는 모든 지식 노동자, 학생, 창작자를 위해 설계되었습니다. 특히 재택근무, 논문 작성, 코딩, 디자인 작업 등 깊은 집중이 필요한 모든 활동에 효과적입니다.',
+      question: '🧠 "ADHD가 없어도 필요한가요?"',
+      answer: '일을 시작하려 하면 막막하거나, 몰입하다 보면 몇 시간이 훌쫜 지나가는 경험, 누구나 있죠? 재택근무하면서 시간 관리가 어려운 분, 논문이나 보고서 마감에 쫓기는 분, 코딩하다 보면 시간 가는 줄 모르는 분... ChronoLink는 "시간 관리가 어려운" 모든 분들을 위한 제품입니다.',
     },
     {
       question: '배터리는 얼마나 가나요?',
@@ -28,8 +28,8 @@ export default function FAQ() {
       answer: '30일 무조건 환불 보장입니다. 제품을 받고 30일 이내라면 어떤 이유든 100% 환불해드립니다. 반품 배송비도 저희가 부담합니다. 여러분의 만족이 최우선입니다.',
     },
     {
-      question: '킥스타터 펀딩 후 언제 받을 수 있나요?',
-      answer: '펀딩 종료 후 약 3-4개월 내 배송을 목표로 하고 있습니다. 정확한 일정은 펀딩 달성률과 제작 상황에 따라 조정될 수 있으며, 슈퍼 얼리버드 후원자분들께 우선 배송됩니다.',
+      question: '📦 "언제 받을 수 있나요?"',
+      answer: '펀딩 종료 후 약 3-4개월 내 배송 예정입니다. 직접 만들기 시작한 프로젝트인 만큼, 품질에 조금도 타협하지 않겠습니다. Early Bird 참여자분들께는 우선 배송드립니다.',
     },
     {
       question: '다른 타이머 앱과 연동되나요?',
@@ -47,11 +47,18 @@ export default function FAQ() {
         <div className="max-w-3xl mx-auto">
           {/* 섹션 헤더 */}
           <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 bg-blue-100 text-blue-800 rounded-full mb-6">
+              <HelpCircle className="w-4 h-4" />
+              <span>여러분도 궁금하셨죠?</span>
+            </div>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-              자주 묻는 질문
+              저도 처음엔<br />
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                이런 것들이 궁금했어요
+              </span>
             </h2>
             <p className="text-xl text-gray-600">
-              구매 전 궁금한 점을 확인하세요
+              &ldquo;정말 효과가 있을까?&rdquo; &ldquo;또 안 쓰게 되는 거 아닐까?&rdquo;
             </p>
           </div>
 
@@ -93,11 +100,15 @@ export default function FAQ() {
 
           {/* 추가 문의 */}
           <div className="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 text-center">
-            <h3 className="text-xl font-semibold mb-3">
-              더 궁금한 점이 있으신가요?
-            </h3>
+            <div className="inline-flex items-center gap-2 mb-3">
+              <MessageCircle className="w-5 h-5" />
+              <h3 className="text-xl font-semibold">
+                &ldquo;이것도 궁금해요!&rdquo;
+              </h3>
+            </div>
             <p className="text-gray-600 mb-6">
-              언제든지 문의해주세요. 24시간 내에 답변드립니다.
+              무엇이든 편하게 물어보세요.<br />
+              저도 처음엔 모든 게 궁금했거든요.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a

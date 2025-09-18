@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Check } from 'lucide-react';
+import { Check, Heart, Sparkles, Users } from 'lucide-react';
 import { Button } from './Button';
 
 export default function Pricing() {
@@ -9,13 +9,13 @@ export default function Pricing() {
 
   const plans = [
     {
-      name: '슈퍼 얼리버드',
-      badge: '초특가',
+      name: '함께 시작하기',
+      badge: 'Early Bird',
       price: 69000,
       originalPrice: 99000,
       discount: 30,
-      description: '첫 50명 한정 초특가',
-      stock: '12/50석 남음',
+      description: '최초 참여자 특별가',
+      stock: '한정 수량',
       features: [
         'ChronoLink 물리 타이머 1개',
         'PC 연동 앱 라이선스',
@@ -29,13 +29,13 @@ export default function Pricing() {
       popular: false,
     },
     {
-      name: '얼리버드',
-      badge: '인기',
+      name: '함께 만들기',
+      badge: '추천',
       price: 79000,
       originalPrice: 99000,
       discount: 20,
-      description: '첫 200명 한정 특가',
-      stock: '87/200석 남음',
+      description: '개발에 참여하는 특가',
+      stock: '한정 수량',
       features: [
         'ChronoLink 물리 타이머 1개',
         'PC 연동 앱 라이선스',
@@ -69,27 +69,32 @@ export default function Pricing() {
       <div className="container mx-auto px-6">
         {/* 섹션 헤더 */}
         <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full mb-6">
+            <Sparkles className="w-4 h-4" />
+            <span>Early Bird 한정 특가</span>
+          </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            펀딩 옵션
+            함께 만들어가는<br />
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              ChronoLink의 첫 발걸음
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            당신에게 맞는 패키지를 선택하고 생산성 혁명에 동참하세요
+            &ldquo;나만 이런 게 어려운가?&rdquo;에서 시작된 프로젝트<br />
+            여러분의 참여가 ChronoLink를 완성합니다
           </p>
         </div>
 
-        {/* 긴급성 배너 */}
-        <div className="bg-gradient-to-r from-orange-50 to-red-50 border border-orange-200 rounded-xl p-4 mb-12">
-          <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
-            <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-              <span className="font-semibold">48시간 한정 특가</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-semibold">슈퍼얼리버드 12/50석 남음</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="font-semibold">현재 73% 펀딩 달성</span>
-            </div>
+        {/* 공감 배너 */}
+        <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-xl p-6 mb-12">
+          <div className="text-center">
+            <p className="text-lg font-medium text-gray-800 mb-3">
+              💔 저도 타임타이머, 큐브 타이머, 뽀모도로 앱까지 다 써봤지만...
+            </p>
+            <p className="text-gray-600">
+              결국 꾸준히 사용하지 못했습니다. <br />
+              <span className="font-semibold text-black">좋은 몰입을 설계해주는 구조</span>가 필요했죠.
+            </p>
           </div>
         </div>
 
@@ -199,7 +204,10 @@ export default function Pricing() {
 
         {/* 보증 정보 */}
         <div className="bg-gray-50 rounded-2xl p-8 text-center">
-          <h3 className="text-2xl font-bold mb-4">안심하고 구매하세요</h3>
+          <div className="inline-flex items-center gap-2 mb-4">
+            <Heart className="w-6 h-6 text-red-500" />
+            <h3 className="text-2xl font-bold">안심하고 함께해주세요</h3>
+          </div>
           <div className="grid md:grid-cols-4 gap-6 mt-8">
             <div>
               <div className="text-3xl mb-2">↩️</div>

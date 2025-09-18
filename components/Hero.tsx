@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { ArrowRight, Clock, Zap, Shield } from 'lucide-react';
+import { ArrowRight, Brain, Heart, Sparkles } from 'lucide-react';
 
 export default function Hero() {
   const [backers, setBackers] = useState(0);
@@ -26,55 +26,69 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* 왼쪽: 텍스트 콘텐츠 */}
           <div className={`space-y-6 ${isVisible ? 'animate-fade-up' : 'opacity-0'}`}>
-            {/* 배지 */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              <span className="text-sm font-medium text-gray-700">
-                Kickstarter 런칭 예정
-              </span>
-            </div>
-
             {/* 메인 헤드라인 */}
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              당신의 시간을
+              <span className="text-3xl lg:text-4xl">⏳</span> ChronoLink,
               <br />
-              <span className="text-gray-500">되찾으세요</span>
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">시간을 손에 쥐다</span>
             </h1>
 
             {/* 서브헤드라인 */}
-            <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
-              물리적 타이머와 디지털 인사이트가 만나는 곳.
-              BLE 연결로 PC와 동기화되는 혁신적인 생산성 도구.
-            </p>
-
-            {/* 핵심 특징 */}
-            <div className="flex flex-wrap gap-4 text-sm">
-              <div className="flex items-center gap-2">
-                <Clock className="w-4 h-4 text-gray-500" />
-                <span>6개월 배터리</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Zap className="w-4 h-4 text-gray-500" />
-                <span>BLE 무선 연결</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Shield className="w-4 h-4 text-gray-500" />
-                <span>30일 환불 보장</span>
-              </div>
+            <div className="text-xl text-gray-600 leading-relaxed max-w-lg space-y-4">
+              <p>
+                안녕하세요.<br />
+                저는 늘 집중과 시간 관리에 어려움을 겪어왔어요.
+              </p>
+              <p>
+                일을 시작하려 하면 막막해서 아무것도 못 하거나, 반대로 과몰입을 해서 몇 시간을 날리기도 했어요. 회의는 놓치고, 점심은 거르고, 약속에도 늦곤 했죠.
+              </p>
+              <p className="font-semibold text-black">
+                아마 여러분 중에도 비슷한 경험을 하신 분들이 있을거라 생각해요.
+              </p>
             </div>
 
-            {/* 긴급성 표시 */}
-            <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
+            {/* 문제 인식 */}
+            <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+              <h3 className="font-semibold mb-3 flex items-center gap-2">
+                <Brain className="w-5 h-5" />
+                🧩 왜 기존 도구들은 실패했을까?
+              </h3>
+              <div className="space-y-2 text-sm text-gray-600">
+                <div className="flex items-start gap-2">
+                  <span className="text-red-500">•</span>
+                  <span><strong>앱:</strong> 주의 분산의 원인이 되는 기기에서 실행 → 알림과 SNS에 휘둘림</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-orange-500">•</span>
+                  <span><strong>소프트웨어만:</strong> 물리적 강제력 부족 → 무시하기 쉬움</span>
+                </div>
+                <div className="flex items-start gap-2">
+                  <span className="text-yellow-500">•</span>
+                  <span><strong>물리 타이머:</strong> PC와 단절 → 데이터 추적과 기록 불가</span>
+                </div>
+              </div>
+              <p className="mt-3 text-xs text-gray-500 italic">
+                타임타이머, 큐브 타이머, 뽀모도로 앱까지 모두 사용해봤지만, 결국 꾸준히 사용하지 못했어요.
+              </p>
+            </div>
+
+            {/* ChronoLink 솔루션 */}
+            <div className="bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-4">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="font-semibold text-orange-900">
-                    슈퍼 얼리버드 특가
+                  <p className="font-semibold text-gray-900 flex items-center gap-2">
+                    <Sparkles className="w-4 h-4" />
+                    🌱 ChronoLink의 시작
                   </p>
-                  <p className="text-sm text-orange-700">
-                    {superEarlyBird}/50석 남음 · 48시간 한정
+                  <p className="text-sm text-gray-700 mt-1">
+                    저에게 필요했던 건 단순히 시간을 쪼개는 기계가 아니라,<br />
+                    <strong>좋은 몰입을 설계해주는 구조</strong>였어요.
+                  </p>
+                  <p className="text-xs text-gray-600 mt-2">
+                    Early Bird {superEarlyBird}/50명 한정
                   </p>
                 </div>
-                <div className="text-2xl font-bold text-orange-900">
+                <div className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                   43% OFF
                 </div>
               </div>
@@ -83,11 +97,11 @@ export default function Hero() {
             {/* CTA 버튼 */}
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="group">
-                지금 구매하기
+                함께 시간의 주인 되기
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button size="lg" variant="outline">
-                자세히 알아보기
+                내 이야기 들어보기
               </Button>
             </div>
 
@@ -103,9 +117,9 @@ export default function Hero() {
               </div>
               <div>
                 <p className="text-sm text-gray-600">
-                  <span className="font-bold text-black">{backers.toLocaleString()}명</span>이 대기 중
+                  <span className="font-bold text-black">{backers.toLocaleString()}명</span>과 함께하는 여정
                 </p>
-                <p className="text-xs text-gray-500">베타테스터 평점 4.8/5.0</p>
+                <p className="text-xs text-gray-500">만족도 4.8/5.0</p>
               </div>
             </div>
           </div>
@@ -135,23 +149,23 @@ export default function Hero() {
               <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-xl p-4 animate-bounce">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <Zap className="w-6 h-6 text-blue-600" />
+                    <Brain className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">PC 화면 자동 차단</p>
-                    <p className="text-xs text-gray-500">집중력 극대화</p>
+                    <p className="font-semibold text-sm">뽀모도로 알람</p>
+                    <p className="text-xs text-gray-500">몰입과 휴식의 리듬</p>
                   </div>
                 </div>
               </div>
 
               <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-xl p-4">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                    <Shield className="w-6 h-6 text-green-600" />
+                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                    <Heart className="w-6 h-6 text-purple-600" />
                   </div>
                   <div>
-                    <p className="font-semibold text-sm">ADHD 친화적</p>
-                    <p className="text-xs text-gray-500">237명 검증</p>
+                    <p className="font-semibold text-sm">반려 뽀모도로</p>
+                    <p className="text-xs text-gray-500">다마고치 모드</p>
                   </div>
                 </div>
               </div>
@@ -160,16 +174,16 @@ export default function Hero() {
             {/* 제품 스펙 미니 */}
             <div className="mt-8 grid grid-cols-3 gap-4 text-center">
               <div>
-                <p className="text-2xl font-bold">6개월</p>
-                <p className="text-xs text-gray-500">배터리 수명</p>
+                <p className="text-2xl font-bold">89%</p>
+                <p className="text-xs text-gray-500">집중력 개선</p>
               </div>
               <div>
-                <p className="text-2xl font-bold">0.1초</p>
-                <p className="text-xs text-gray-500">동기화 속도</p>
+                <p className="text-2xl font-bold">76%</p>
+                <p className="text-xs text-gray-500">스마트폰 사용 감소</p>
               </div>
               <div>
-                <p className="text-2xl font-bold">43%</p>
-                <p className="text-xs text-gray-500">작업 완료율 ↑</p>
+                <p className="text-2xl font-bold">4.8/5</p>
+                <p className="text-xs text-gray-500">만족도</p>
               </div>
             </div>
           </div>

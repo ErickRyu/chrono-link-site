@@ -161,6 +161,7 @@ export default function FundingModal({ isOpen, onClose, packageType, price }: Fu
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent outline-none transition-all"
                     disabled={isSubmitting}
+                    placeholder="홍길동"
                   />
                 </div>
 

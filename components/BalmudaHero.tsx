@@ -13,7 +13,7 @@ export default function BalmudaHero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FAFAFA]">
       {/* Subtle gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#FAFAFA] to-[#F5F5F5]" />
-      
+
       {/* Main content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-8">
         {/* Product image - centered and prominent */}
@@ -95,41 +95,42 @@ export default function BalmudaHero() {
             </div>
             {/* Product name - minimal and elegant */}
             <div className="absolute -bottom-10 left-0 right-0">
-              <h2 className="text-sm tracking-[0.3em] text-gray-500 font-light uppercase">
-                ChronoLink
+              <h2 className="text-2xl tracking-[0.2em] text-gray-700 font-light">
+                ⏳ ChronoLink
               </h2>
+              <p className="text-sm text-gray-500 mt-2">시간을 손에 쥐다</p>
             </div>
           </div>
         </div>
 
         {/* Main headline - personal story */}
         <div className={`mb-12 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-all duration-[1500ms] delay-300 ease-out`}>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight tracking-wide leading-[1.2] text-gray-900">
-            나만 이런 게 어렵나?
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extralight tracking-wide leading-[1.3] text-gray-900">
+            안녕하세요.
             <br />
-            <span className="font-light">여러분도 어렵죠?</span>
+            <span className="text-3xl md:text-4xl">저는 늘 집중과 시간 관리에 어려움을 겪어왔어요.</span>
           </h1>
         </div>
 
         {/* Subheadline - founder story */}
         <div className={`mb-16 ${isVisible ? 'opacity-100' : 'opacity-0'} transition-all duration-[1500ms] delay-500 ease-out`}>
-          <p className="text-lg md:text-xl font-light text-gray-800 leading-relaxed max-w-3xl mx-auto">
-            일을 시작하려고 앉으면 막막해서 아무것도 못하거나
+          <p className="text-lg md:text-xl font-light text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            일을 시작하려 하면 막막해서 아무것도 못 하거나,
             <br />
-            반대로 한 가지에 빠져 3시간이 훌쩍 지나가 약속을 놓치는 경험, 다들 있으시죠?
+            반대로 과몰입을 해서 몇 시간을 날리기도 했어요.
             <br />
-            <span className="text-base text-gray-700 mt-4 block">
-              저 같은 사람이 어떻게 삽질하고 실패하고 눈물 흘리면서
-              <br />
-              결국 만들어낸 집중과 회복의 솔루션
+            회의는 놓치고, 점심은 거르고, 약속에도 늦곤 했죠.
+            <br />
+            <span className="text-base text-gray-600 mt-6 block font-medium">
+              아마 여러분 중에도 비슷한 경험을 하신 분들이 있을거라 생각해요.
             </span>
           </p>
         </div>
 
         {/* Single CTA - refined and minimal */}
         <div className={`${isVisible ? 'opacity-100' : 'opacity-0'} transition-all duration-[1500ms] delay-700 ease-out`}>
-          <button className="px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm uppercase transition-all duration-800 hover:bg-transparent hover:text-black">
-            Discover
+          <button className="px-12 py-4 bg-black text-white border border-black font-light tracking-wider text-sm transition-all duration-800 hover:bg-transparent hover:text-black">
+            함께 시간의 주인이 되어볼까요?
           </button>
         </div>
 

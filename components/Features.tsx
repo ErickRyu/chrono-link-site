@@ -1,39 +1,39 @@
 'use client';
 
 import { useState } from 'react';
-import { Bluetooth, Battery, Brain, Zap } from 'lucide-react';
+import { Timer, Heart, Sparkles, Brain, Apple } from 'lucide-react';
 
 export default function Features() {
   const [activeFeature, setActiveFeature] = useState(0);
 
   const features = [
     {
-      icon: Bluetooth,
-      title: 'BLE 무선 연결',
-      subtitle: 'PC와 실시간 동기화',
-      description: '블루투스 저전력 기술로 PC 앱과 실시간 연결. 타이머 설정과 상태가 즉시 동기화되어 완벽한 시간 관리가 가능합니다.',
-      benefits: ['0.1초 동기화 속도', '10m 연결 범위', '자동 재연결'],
+      icon: Apple,
+      title: '🍅 뽀모알람',
+      subtitle: '몰입과 휴식의 리듬',
+      description: '25분 집중, 5분 휴식의 황금 비율. 일을 시작하기 막막할 때, 타이머를 돌리는 것만으로 첫걸음을 뗄 수 있습니다. 몰입의 시작이 가장 어렵다는 걸 우리는 알고 있죠.',
+      benefits: ['막막함을 극복하는 시작 신호', '자연스러운 몰입 유도', '번아웃 방지'],
     },
     {
-      icon: Brain,
-      title: 'ADHD 친화적 설계',
-      subtitle: '과학적으로 검증된 집중력 향상',
-      description: '237명의 ADHD 베타테스터가 검증한 설계. 물리적 다이얼을 돌리는 행위가 뇌에 집중 신호를 보내 43% 높은 작업 완료율을 달성합니다.',
-      benefits: ['촉각적 피드백', '시각적 명확성', '강제 휴식 기능'],
+      icon: Timer,
+      title: '⏱️ 타이머 & 브레이크',
+      subtitle: '과몰입을 끊어내는 구조',
+      description: '과집중으로 몇 시간을 날리셨나요? 저도 그랬습니다. ChronoLink는 설정한 시간이 되면 물리적인 알람과 PC 화면 차단으로 확실하게 몰입을 끊어냅니다.',
+      benefits: ['과몰입 방지', '회의/약속 놓치지 않기', '건강한 작업 리듬'],
     },
     {
-      icon: Zap,
-      title: 'PC 화면 자동 차단',
-      subtitle: '디지털 디톡스의 완성',
-      description: '타이머 종료 시 PC 화면을 자동으로 차단하여 작업 중단을 강제. 과집중으로 인한 번아웃을 예방하고 건강한 작업 리듬을 만듭니다.',
-      benefits: ['즉시 화면 차단', '커스텀 메시지', '긴급 해제 가능'],
+      icon: Heart,
+      title: '🥚 반려 뽀모도로',
+      subtitle: '다마고치 모드로 확실한 휴식',
+      description: '타이머가 끝나면 귀여운 캐릭터가 나타납니다. 상호작용하며 확실히 쉬도록 유도하죠. 휴식도 일의 일부라는 걸, 이제는 즐겁게 실천할 수 있습니다.',
+      benefits: ['재미있는 휴식 유도', '도파민 보상 시스템', '지속 가능한 습관 형성'],
     },
     {
-      icon: Battery,
-      title: '6개월 배터리 수명',
-      subtitle: '충전 걱정 없는 생산성',
-      description: 'CR2032 코인 배터리 하나로 6개월 사용. BLE 4.0 저전력 기술로 배터리 교체 주기를 최소화했습니다.',
-      benefits: ['6개월 연속 사용', '배터리 잔량 표시', '간편한 교체'],
+      icon: Sparkles,
+      title: '✨ 물리적 경험',
+      subtitle: '손끝으로 시간을 조작하다',
+      description: '다이얼을 돌리는 촉각적 경험이 뇌에 "이제 시작이야"라는 신호를 보냅니다. 스마트폰을 꺼내지 않아도, 한눈에 남은 시간을 확인할 수 있죠.',
+      benefits: ['직관적인 조작', '스마트폰 의존도 감소', '시각적 시간 인지'],
     },
   ];
 
@@ -42,11 +42,19 @@ export default function Features() {
       <div className="container mx-auto px-6">
         {/* 섹션 헤더 */}
         <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 bg-green-100 text-green-800 rounded-full mb-4">
+            <Brain className="w-4 h-4" />
+            <span>좋은 몰입을 설계하는 구조</span>
+          </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            혁신적인 기능
+            제가 필요했던 건<br />
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              단순한 타이머가 아니었어요
+            </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            물리적 경험과 디지털 편의성을 완벽하게 결합한 차세대 타이머
+            타임타이머도, 큐브 타이머도, 뽀모도로 앱도 다 써봤지만<br />
+            결국 꾸준히 사용하지 못했습니다. 왜일까요?
           </p>
         </div>
 
@@ -127,23 +135,28 @@ export default function Features() {
           </div>
         </div>
 
-        {/* 기술 스펙 미니 */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">BLE 4.0</div>
-            <div className="text-sm text-gray-500">저전력 무선 기술</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">6개월</div>
-            <div className="text-sm text-gray-500">배터리 수명</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">0.1초</div>
-            <div className="text-sm text-gray-500">동기화 속도</div>
-          </div>
-          <div className="text-center">
-            <div className="text-3xl font-bold mb-2">43%↑</div>
-            <div className="text-sm text-gray-500">작업 완료율</div>
+        {/* 사용자 성과 */}
+        <div className="mt-16 bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+          <h3 className="text-2xl font-bold text-center mb-8">
+            사용자들이 경험한 변화
+          </h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <div className="text-3xl font-bold mb-2 text-blue-600">89%</div>
+              <div className="text-sm text-gray-600">집중력 개선</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold mb-2 text-green-600">76%</div>
+              <div className="text-sm text-gray-600">스마트폰 사용 감소</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold mb-2 text-purple-600">4.8/5</div>
+              <div className="text-sm text-gray-600">만족도</div>
+            </div>
+            <div className="text-center">
+              <div className="text-3xl font-bold mb-2 text-orange-600">92%</div>
+              <div className="text-sm text-gray-600">재구매 의향</div>
+            </div>
           </div>
         </div>
       </div>

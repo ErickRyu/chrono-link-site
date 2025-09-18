@@ -1,17 +1,26 @@
 'use client';
 
 import Image from 'next/image';
+import { Rocket, Users, Heart } from 'lucide-react';
 
 export default function Progress() {
   return (
     <section className="py-32 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-5xl mx-auto px-8">
         <div className="text-center mb-20">
+          <div className="inline-flex items-center gap-2 text-sm font-medium px-4 py-2 bg-purple-100 text-purple-800 rounded-full mb-6">
+            <Rocket className="w-4 h-4" />
+            <span>함께 만들어가는 여정</span>
+          </div>
           <h2 className="text-5xl md:text-6xl font-extralight text-gray-900 tracking-wide mb-6">
-            현재 진행 상황
+            직접 만들기 시작한<br />
+            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              우리들의 이야기
+            </span>
           </h2>
-          <p className="text-xl font-light text-gray-700">
-            프로토타입 완성, 앱 개발 진행중
+          <p className="text-xl font-light text-gray-700 max-w-2xl mx-auto">
+            &ldquo;시간 관리가 어려운 건 나만이 아니었구나&rdquo;<br />
+            사용자들과 함께 만들어가는 여정
           </p>
         </div>
 
