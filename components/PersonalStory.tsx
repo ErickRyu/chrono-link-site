@@ -46,7 +46,7 @@ export default function PersonalStory() {
             <blockquote className="border-l-4 border-gray-900 pl-8 my-12">
               <p className="text-2xl font-light italic text-gray-900">
                 &ldquo;회의 시간을 또 놓쳤네요.
-                하나만 끝내려고 했는데 베서 3시간이 지나갅4어요.&rdquo;
+                하나만 끝내려고 했는데 벌써 3시간이 지나갅4어요.&rdquo;
               </p>
             </blockquote>
 
